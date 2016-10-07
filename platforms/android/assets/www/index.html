@@ -18,32 +18,164 @@
     under the License.
 -->
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.1.4.5.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- temporarily moved to head whilst we develop app...-->
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="js/trip.js"></script>
+    <title>CrunchTime</title>
+</head>
+<body>
+
+<!-- page1 -->
+    <div data-role="page" id="homePage">
+        <div data-role="header">
+            <h2>CrunchTime</h2>
+            <a href="#loginPage" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-icon-left" >Bars Icon</a>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <div data-role="main", content="ui-content">
+            <div role="main" class="ui-content">
+
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#">
+                        <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb">
+
+                        <p>Burrito Bowl</p>
+
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../www/img/taco.jpg" class="ui-li-thumb">
+
+                        <p>Crispy Corn Tacos</p>
+
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../www/img/salad.jpg" class="ui-li-thumb">
+
+                        <p>Salad</p>
+
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../www/img/sandwich.jpg" class="ui-li-thumb">
+
+                        <p>Sandwich</p>
+
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../www/img/fries.jpg" class="ui-li-thumb">
+
+                        <p>Fries</p>
+
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../www/img/burger.jpg" class="ui-li-thumb">
+
+                        <p>Burger</p>
+
+                    </a></li>
+
+                </ul>
+
+            </div><!-- /content -->
+    </div>
+     </div>
+        </div>
+
+    <div data-role="page" id="loginPage" data-dialog="true">
+        <div data-role="main" class="ui-content">
+        <form method="post" action="#myPage">
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username"><br>
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password"><br>
+            <input type="submit" data-inline="true" value="Login">
+
+        </form>
+    </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="signUpPage" data-dialog="true">
+        <form method="post" action="#myPage">
+            <label for="firstname">Firstname </label>
+            <input type="text" name="firstname" id="firstname"><br>
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" id="lastname"><br>
+            <label for="dob">Date Of Birth: </label>
+            <input type="text" name="dob" id="dob"><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email"><br>
+            <label for=pwd1>Password: </label>
+            <input type="text" name="pwd1" id="pwd1"><br>
+            <label for="pwd2">Confirm Password</label>
+            <input type="text" name="pwd2" id="pwd2"><br>
+            <input type="submit" data-inline="true" value="SignUp">
+
+        </form>
+    </div>
+
+    <div data-role="page" id="myPage">
+        <div data-role="header">
+            <h2>CrunchTime</h2>
+            </div>
+
+        </div>
+
+    <div data-role="page" id="searchPage">
+        <div data-role="header">
+        <h2>CrunchTime</h2>
+        </div>
+        <div data-role="main" content="ui-content">
+            <form method="post" action="#searchResultPage">
+            <div data-role="controlgroup" data-type="horizontal">
+                <label for="veg">Veg</label>
+                <input type="checkbox" name="pref" id="veg" value="veg">
+                <label for="nonVeg">Non-Veg</label>
+                <input type="checkbox" name="pref" id="nonVeg" value="nonVeg">
+                <label for="vegan">Vegan</label>
+                <input type="checkbox" name="pref" id="vegan" value="vegan">
+            </div><br>
+            <label for="ingredient">Ingredients:</label>
+            <input type="text" name="ingredient" id="ingredient"><br>
+        <label for="time">Time Preference</label>
+        <select name="time" id="time">
+            <option value="any">Any</option>
+            <option value="15">00:15</option>
+            <option value="30">00:30</option>
+            <option value="45">00:45</option>
+            <option value="1">01:00</option>
+            <option value="1.15">01:15</option>
+            <option value="1.30">01:30</option>
+            <option value="more"> > 01:30 </option>
+        </select>
+        </fieldset>
+        <input type="submit" data-inline="true" value="Submit">
+
+        </form>
+            </div>
+
+
+    </div>
+
+    <div data-role="page" id="searchResultPage">
+        <div data-role="header">
+        <h2>CrunchTime</h2>
+        </div>
+    </div>
+
+    <div data-role="page" id="aboutUsPage">
+        <div data-role="header">
+        <h2>CrunchTime</h2>
+        </div>
+    </div>
+
     </body>
 </html>
