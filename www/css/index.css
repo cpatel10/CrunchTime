@@ -1,43 +1,16 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-}
+
+/** {*/
+    /*!*-webkit-tap-highlight-color: rgba(0,0,0,0); !* make transparent link selection, adjust last value opacity 0 to 1.0 *!*!*/
+/*}*/
 
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    /*-webkit-text-size-adjust: none;             !* prevent webkit from resizing text to fit *!*/
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color: transparent;
-    /*background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);*/
-    /*background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);*/
-    /*background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);*/
-    /*background-image:-webkit-gradient(*/
-            /*linear,*/
-            /*left top,*/
-            /*left bottom,*/
-            /*color-stop(0, #A7A7A7),*/
-            /*color-stop(0.51, #E4E4E4)*/
-    /*);*/
+    background-color: white;
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-size:8px;
     height:100%;
     margin:10px;
     padding:0px;
@@ -53,7 +26,7 @@ body {
     top:50%;
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
-    text-align:center;
+    text-align:left;
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
     /* offset horizontal: half of text area width */
@@ -69,14 +42,7 @@ body {
     }
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
-}
+
 
 .event {
     border-radius:4px;
@@ -113,10 +79,69 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+body{
+    text-align: center;
+    margin:10px;
 
-
-
-#signUp{
-    padding-top: 10px;
 }
+#homePage, #aboutUsPage, #loginPage , #signUpPage, #myPage, #searchPage, #searchResultPage{
+    background-color: white;
+}
+
+#header{
+    background-color:#f63440;
+    overflow: visible;
+    text-align: left;
+    font-family: 'Calibri Light', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+
+
+}
+
+h1{
+    color: #ffffff;
+
+}
+
+
+.time1, .time1-o{
+    display: inline-block;
+    margin-top: 10px;
+    position:relative;
+}
+
+
+
+
+
+.search{
+    width: 30%;
+    margin: 10px auto;
+
+
+}
+
+
+
+
+.one{
+    display: none;
+    width:30%;
+    float:right;
+
+
+}
+
+.ui-grid-x{
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+
+.time2, .time2-o{
+    display: inline-block;
+
+}
+
 

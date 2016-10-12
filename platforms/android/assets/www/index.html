@@ -1,163 +1,176 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
 <head>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
+
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.1.4.5.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+
     <!-- temporarily moved to head whilst we develop app...-->
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
-    <script type="text/javascript" src="js/trip.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/crunchtime.js"></script>
+
     <title>CrunchTime</title>
 </head>
 <body>
 
 <!-- page1 -->
     <div data-role="page" id="homePage">
-        <div data-role="header">
-            <h2>CrunchTime</h2>
-            <a href="#loginPage" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-icon-left" >Bars Icon</a>
-        </div>
-        <div data-role="main", content="ui-content">
-            <div role="main" class="ui-content">
+        <div id= "header" data-role="header" content="ui-content" >
+            <h1>CrunchTime</h1>
+            <!--<ul class="menu-right" data-role="menu">-->
 
-                <ul data-role="listview" data-inset="true">
-                    <li><a href="#">
+                    <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
+                    <ul class= "one" data-role="listview" data-inset="true">
+                        <li data-icon="false"><a href="#loginPage">Login</a></li>
+                        <li data-icon="false"><a href="#signUpPage">Register</a></li>
+                        <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
+                    </ul>
+
+
+            <!--</ul>-->
+            <!--<a href=#loginPage class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext ">Bars Icon</a>-->
+        </div>
+
+
+
+
+
+        <div class="time1" content="ui-content">
+                <label for="time1">Have these items in </label></div>
+                <div class="time1-o">
+                <select name="time1" id="time1" data-inline="true" data-mini="true">
+                    <option value="30">30 mins</option>
+                    <option value="15">15 mins</option>
+                    <option value="45">45 mins</option>
+                    <option value="1">1 hour</option>
+                    <option value="1.15"> > 1 hour</option>
+
+                </select>
+                    </div>
+
+            <div class="search">
+            <label for="search-basic" class="ui-hidden-accessible" data-mini="true">Search Input:</label>
+            <input type="search" name="search" id="search-basic" placeholder="search" style="text-align: center" />
+                </div>
+
+            <div class="advancedSearch"><p><a href="#searchPage">Advanced Search</a></p></div>
+
+
+
+        <div data-role="main" content="ui-content">
+            <div class="ui-grid-x">
+
+                <div class = "ui-block-a">
+                    <span><a href="#">
                         <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb">
 
                         <p>Burrito Bowl</p>
 
-                    </a></li>
-                    <li><a href="#">
+                    </a></span></div>
+                    <div class="ui-block-b"><span><a href="#">
                         <img src="../www/img/taco.jpg" class="ui-li-thumb">
 
                         <p>Crispy Corn Tacos</p>
 
-                    </a></li>
-                    <li><a href="#">
+                    </a></span></div>
+                    <div class ="ui-block-a"><span><a href="#">
                         <img src="../www/img/salad.jpg" class="ui-li-thumb">
 
                         <p>Salad</p>
 
-                    </a></li>
-                    <li><a href="#">
-                        <img src="../www/img/sandwich.jpg" class="ui-li-thumb">
-
-                        <p>Sandwich</p>
-
-                    </a></li>
-                    <li><a href="#">
-                        <img src="../www/img/fries.jpg" class="ui-li-thumb">
-
-                        <p>Fries</p>
-
-                    </a></li>
-                    <li><a href="#">
+                    </a></span></div>
+                    <div class="ui-block-b"><span><a href="#">
                         <img src="../www/img/burger.jpg" class="ui-li-thumb">
 
                         <p>Burger</p>
 
-                    </a></li>
+                    </a></span></div>
+            </div>
+         </div>
 
-                </ul>
-
-            </div><!-- /content -->
-    </div>
-     </div>
+        <div data-role="popup"  id="loginPage" class="ui-content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <form id ="login" method="post" action="#myPage">
+                <h3>Login/ <a href="#signUpPage">Sign Up</a></h3>
+                <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+                <input type="text" name="user" id="usrnm" placeholder="Username"><br>
+                <label for="pswd" class="ui-hidden-accessible">Password:</label>
+                <input type="password" name="pswd" id="pswd" placeholder="Password"><br>
+                <label for="log">Keep me logged in</label>
+                <input type="checkbox" name="login" id="log" value="1" data-mini="true"><br>
+                <input type="submit" data-inline="true" value="Log in">
+            </form>
         </div>
 
-    <div data-role="page" id="loginPage" data-dialog="true">
-        <div data-role="main" class="ui-content">
-        <form method="post" action="#myPage">
-            <label for="username">Username: </label>
-            <input type="text" name="username" id="username"><br>
-            <label for="password">Password:</label>
-            <input type="text" name="password" id="password"><br>
-            <input type="submit" data-inline="true" value="Login">
 
-        </form>
-    </div>
+
+        <div data-role="popup" id="signUpPage">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <form id = "signUp" method="post" action="#myPage">
+                <h3>Register</h3>
+                <label for="firstname">Name </label>
+                <input type="text" name="firstname" id="firstname"><br>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email"><br>
+                <label for=pwd1>Password: </label>
+                <input type="text" name="pwd1" id="pwd1"><br>
+                <label for="pwd2">Confirm Password</label>
+                <input type="text" name="pwd2" id="pwd2"><br>
+                <input type="submit" data-inline="true" value="SignUp">
+
+            </form>
         </div>
+
     </div>
 
-    <div data-role="page" id="signUpPage" data-dialog="true">
-        <form method="post" action="#myPage">
-            <label for="firstname">Firstname </label>
-            <input type="text" name="firstname" id="firstname"><br>
-            <label for="lastname">Lastname</label>
-            <input type="text" name="lastname" id="lastname"><br>
-            <label for="dob">Date Of Birth: </label>
-            <input type="text" name="dob" id="dob"><br>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email"><br>
-            <label for=pwd1>Password: </label>
-            <input type="text" name="pwd1" id="pwd1"><br>
-            <label for="pwd2">Confirm Password</label>
-            <input type="text" name="pwd2" id="pwd2"><br>
-            <input type="submit" data-inline="true" value="SignUp">
 
-        </form>
-    </div>
 
     <div data-role="page" id="myPage">
         <div data-role="header">
-            <h2>CrunchTime</h2>
+            <h1>CrunchTime</h1>
             </div>
 
         </div>
 
     <div data-role="page" id="searchPage">
         <div data-role="header">
-        <h2>CrunchTime</h2>
+        <h1>CrunchTime</h1>
         </div>
         <div data-role="main" content="ui-content">
-            <form method="post" action="#searchResultPage">
-            <div data-role="controlgroup" data-type="horizontal">
+            <br method="post" action="#searchResultPage">
+            <div data-role="controlgroup" data-type="horizontal" data-mini="true">
                 <label for="veg">Veg</label>
                 <input type="checkbox" name="pref" id="veg" value="veg">
-                <label for="nonVeg">Non-Veg</label>
-                <input type="checkbox" name="pref" id="nonVeg" value="nonVeg">
                 <label for="vegan">Vegan</label>
                 <input type="checkbox" name="pref" id="vegan" value="vegan">
             </div><br>
+
+
+                <div class="time2" content="ui-content">
+                    <label for="time2">Time Preference</label></div>
+                <div class="time2-o">
+                    <select name="time2" id="time2" data-inline="true" data-mini="true">
+                        <option value="30">00:30</option>
+                        <option value="15">00:15</option>
+                        <option value="45">00:45</option>
+                        <option value="1">01:00</option>
+                        <option value="1.15"> > 01:15</option>
+
+                    </select>
+                </div><br>
             <label for="ingredient">Ingredients:</label>
-            <input type="text" name="ingredient" id="ingredient"><br>
-        <label for="time">Time Preference</label>
-        <select name="time" id="time">
-            <option value="any">Any</option>
-            <option value="15">00:15</option>
-            <option value="30">00:30</option>
-            <option value="45">00:45</option>
-            <option value="1">01:00</option>
-            <option value="1.15">01:15</option>
-            <option value="1.30">01:30</option>
-            <option value="more"> > 01:30 </option>
-        </select>
-        </fieldset>
-        <input type="submit" data-inline="true" value="Submit">
+            <input type="textarea" name="ingredient" id="ingredient"><br>
+
+
+        <input type="submit" data-inline="true" value="Submit" data-mini="true">
 
         </form>
             </div>
@@ -167,15 +180,35 @@
 
     <div data-role="page" id="searchResultPage">
         <div data-role="header">
-        <h2>CrunchTime</h2>
+        <h1>CrunchTime</h1>
         </div>
     </div>
 
     <div data-role="page" id="aboutUsPage">
         <div data-role="header">
-        <h2>CrunchTime</h2>
+        <h1>CrunchTime</h1>
         </div>
+        <div data-role="main" content="ui-content">
+            <h3>About Us</h3>
+            <h4>Sonia Lin</h4>
+            <p>abcabcabacabaa</p>
+
+            <h4>Chingari Patel</h4>
+            <p>xyzxyzigdyedljdhdsld</p>
+            </div>
     </div>
+
+<div data-role="page">
+    <div data-role="header">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+        <h1>Welcome To My Homepage</h1>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <p>Notice that we have added the CSS class of "ui-corner-all" and "ui-shadow" to the header buttons, to make them look a bit more desirable.</p>
+    </div>
+</div>
 
     </body>
 </html>
