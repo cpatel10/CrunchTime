@@ -23,7 +23,7 @@
 
 <!-- page1 -->
     <div data-role="page" id="homePage">
-        <div id= "header" data-role="header" content="ui-content" >
+        <div id="header" data-role="header" content="ui-content" >
             <h1>CrunchTime</h1>
             <!--<ul class="menu-right" data-role="menu">-->
 
@@ -69,33 +69,33 @@
             <div class="ui-grid-x">
 
                 <div class = "ui-block-a">
-                    <span><a href="#">
-                        <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb">
+                    <a href="#">
+                        <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb"></a><br>
 
-                        <p>Burrito Bowl</p>
+                        <span>Burrito Bowl<br> by <a href="#" >Chipotle</a></p></span>
 
-                    </a></span></div>
-                    <div class="ui-block-b"><span><a href="#">
-                        <img src="../www/img/taco.jpg" class="ui-li-thumb">
+                    </div>
+                    <div class="ui-block-b"><a href="#">
+                        <img src="../www/img/taco.jpg" class="ui-li-thumb"></a>
 
-                        <p>Crispy Corn Tacos</p>
+                        <span><p>Crispy Corn Tacos<br>by <a href="#">Taco Bell</a></p></span>
 
-                    </a></span></div>
-                    <div class ="ui-block-a"><span><a href="#">
-                        <img src="../www/img/salad.jpg" class="ui-li-thumb">
+                    </div>
+                    <div class ="ui-block-a"><a href="#">
+                        <img src="../www/img/salad.jpg" class="ui-li-thumb"></a><br>
 
-                        <p>Salad</p>
+                        <span><p>Salad<br>by <a href="#">Chipotle</a></p></span>
 
-                    </a></span></div>
-                    <div class="ui-block-b"><span><a href="#">
-                        <img src="../www/img/burger.jpg" class="ui-li-thumb">
+                    </div>
+                    <div class="ui-block-b"><a href="#">
+                        <img src="../www/img/burger.jpg" class="ui-li-thumb"></a>
 
-                        <p>Burger</p>
+                        <span><p>Burger<br>by <a href="#">McDonalds</a></p></span>
 
-                    </a></span></div>
+                    </div>
             </div>
          </div>
-
+<!--Login Popup-->
         <div data-role="popup"  id="loginPage" class="ui-content">
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
             <form id ="login" method="post" action="#myPage">
@@ -111,7 +111,7 @@
         </div>
 
 
-
+<!--sign up popup-->
         <div data-role="popup" id="signUpPage">
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
             <form id = "signUp" method="post" action="#myPage">
@@ -132,17 +132,30 @@
     </div>
 
 
-
+<!--myPage after loggin in-->
     <div data-role="page" id="myPage">
-        <div data-role="header">
+        <div id="header1" data-role="header">
             <h1>CrunchTime</h1>
+            <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
+            <ul class= "one" data-role="listview" data-inset="true">
+                <li data-icon="false"><a href="#loginPage">Logout</a></li>
+                <li data-icon="false"><a href="#homePage">Home</a></li>
+                <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
+            </ul>
             </div>
 
         </div>
 
+<!--search page-->
     <div data-role="page" id="searchPage">
-        <div data-role="header">
+        <div id="header2" data-role="header">
         <h1>CrunchTime</h1>
+            <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
+            <ul class= "one" data-role="listview" data-inset="true">
+                <li data-icon="false"><a href="#loginPage">Login</a></li>
+                <li data-icon="false"><a href="#signUpPage">Register</a></li>
+                <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
+            </ul>
         </div>
         <div data-role="main" content="ui-content">
             <br method="post" action="#searchResultPage">
@@ -178,37 +191,50 @@
 
     </div>
 
+<!--search result page-->
     <div data-role="page" id="searchResultPage">
-        <div data-role="header">
+        <div id="header3" data-role="header">
         <h1>CrunchTime</h1>
+            <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
+            <ul class= "one" data-role="listview" data-inset="true">
+                <li data-icon="false"><a href="#loginPage">Logout</a></li>
+                <!--<li data-icon="false"><a href="#signUpPage">Register</a></li>-->
+                <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
+            </ul>
         </div>
     </div>
 
+<!--about us page-->
     <div data-role="page" id="aboutUsPage">
-        <div data-role="header">
+        <div id= "header4" data-role="header">
         <h1>CrunchTime</h1>
+            <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
+            <ul class= "one" data-role="listview" data-inset="true">
+                <li data-icon="false"><a href="#loginPage">Login</a></li>
+                <li data-icon="false"><a href="#signUpPage">Register</a></li>
+                <li data-icon="false"><a href="#homePage">Home</a></li>
+            </ul>
         </div>
         <div data-role="main" content="ui-content">
             <h3>About Us</h3>
-            <h4>Sonia Lin</h4>
-            <p>abcabcabacabaa</p>
 
-            <h4>Chingari Patel</h4>
-            <p>xyzxyzigdyedljdhdsld</p>
-            </div>
-    </div>
+            <p>CrunchTime is for early stage professionals and graduate students who are short of time and need quick ideas to stay energized and productive. We gather food items and recipes which we recommend per your need</p>
+            <div data-role="main" content="ui-content">
+                <div class="ui-grid-x">
 
-<div data-role="page">
-    <div data-role="header">
-        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
-        <h1>Welcome To My Homepage</h1>
-        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
-    </div>
+                    <div class = "ui-block-a">
+                            <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb"><br>
+                            <span>Sonia Lin</p></span>
+                    </div>
+                    <div class="ui-block-b">
+                        <img src="../www/img/1.jpg" class="ui-li-thumb">
+                        <span><p>Chingari Patel</p></span>
+                    </div>
+                    </div>
 
-    <div data-role="main" class="ui-content">
-        <p>Notice that we have added the CSS class of "ui-corner-all" and "ui-shadow" to the header buttons, to make them look a bit more desirable.</p>
-    </div>
+
+         </div>
 </div>
-
-    </body>
+</div>
+</body>
 </html>
