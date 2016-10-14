@@ -56,7 +56,7 @@
 
       function querySuccess(tx, results) {
 
-        var foodItemIndexText;
+        var foodItemIndexText = '';
         var len = results.rows.length;
         for (var i = 0; i < len; i++) {
           if (i%2 == 0) {
@@ -146,12 +146,12 @@
             </div>
 
             <div class="search">
-            <label for="search-basic" class="ui-hidden-accessible" data-mini="true">Search Input:</label>
-            
-            <input type="search" name="search" id="search-basic" placeholder="search" style="text-align: center" />
-                </div>
+              <label for="search-basic" class="ui-hidden-accessible" data-mini="true">Search Input:</label>
+              <form action="javascript:goSearch();">
+                <input type="search" name="search" id="search-basic" placeholder="search" style="text-align: center" />
+              </form>
+            </div>
 
-            <button id="searchButton" onclick="goSearch()">Search</button>
 
             <div class="advancedSearch"><p><a href="#searchPage">Advanced Search</a></p></div>
 
