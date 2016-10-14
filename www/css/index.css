@@ -147,8 +147,9 @@ h1{
 #aboutUsPage, #searchPage {
     text-align: left;
 }
-.ui-grid-z{
-    margin: 0;
+#aboutUsPage>.ui-grid-z{
+    padding:20px;
+    position:absolute;
 }
 #p1{
     padding-left: 20px;
