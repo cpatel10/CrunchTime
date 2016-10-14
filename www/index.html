@@ -86,10 +86,6 @@
         tx.executeSql("SELECT * FROM FoodItem where name like ('%"+ document.getElementById("search-basic").value + "%')", [], querySuccess, errorCB);
       }
 
-      $('#searchButton').submit(function(){
-        goSearch();
-      })
-
       $(document).ready(function(){
         $("#time-selector").change(function() {
           filterFoodItems();
