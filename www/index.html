@@ -22,7 +22,7 @@
       var db = null;
 
       document.addEventListener('deviceready', function() {
-        db = window.sqlitePlugin.openDatabase({name: 'mydb5.db', location: 'default'});
+        db = window.sqlitePlugin.openDatabase({name: 'mydb6.db', location: 'default'});
         
         populateDB();
         db.transaction(queryDB, errorCB);
@@ -32,13 +32,22 @@
         db.transaction(function(tx) {
           tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (name, minutes, store, link)');
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Burrito Bowl', 25, 'Chipotle', '../www/img/burritoBowl.jpg']);
+            ['Burrito Bowl', 15, 'Chipotle', '../www/img/burritoBowl.jpg']);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Crispy Corn Tacos', 30, 'Taco Bell', '../www/img/taco.jpg']);
+            ['Crispy Corn Tacos', 20, 'Taco Bell', '../www/img/taco.jpg']);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Quarter Pounder', 15, 'McDonalds', '../www/img/burger.jpg']);
+            ['Quarter Pounder', 25, 'McDonalds', '../www/img/burger.jpg']);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Salad Bowl', 20, 'You', '../www/img/salad.jpg']);
+            ['Salad Bowl', 40, 'You', '../www/img/salad.jpg']);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
+            ['Fries', 20, 'Bop\'N Grill', '../www/img/fries.jpg']);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
+            ['Sandwich', 13, 'Subway', '../www/img/sandwich.jpg']);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
+            ['Chicken Wrap', 35, 'You', '../www/img/wrap.jpg']);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
+            ['Pizza', 15, 'Blaze', '../www/img/pizza.jpg']);
+
         }, function(error) {
           alert('Transaction ERROR: ' + error.message);
         }, function() {
