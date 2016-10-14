@@ -22,9 +22,61 @@
       var db = null;
 
       document.addEventListener('deviceready', function() {
-        db = window.sqlitePlugin.openDatabase({name: 'demo.db', location: 'default'});
+        db = window.sqlitePlugin.openDatabase({name: 'mydb4.db', location: 'default'});
+        
+        populateDB();
+        db.transaction(queryDB, errorCB);
       });
       
+      function populateDB() {
+        db.transaction(function(tx) {
+          tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (name, minutes, store, link)');
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
+            ['Burrito Bowl', 25, 'Chipotle', '../www/img/burritoBowl.jpg']);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
+            ['Crispy Corn Tacos', 30, 'Taco Bell', '../www/img/salad.jpg']);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
+            ['Quarter Pounder', 15, 'McDonalds', '../www/img/burger.jpg']);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
+            ['Salad Bowl', 20, 'You', '../www/img/salad.jpg']);
+        }, function(error) {
+          alert('Transaction ERROR: ' + error.message);
+        }, function() {
+          alert('Populated database OK');
+        });
+      }
+
+      function queryDB(tx) {
+        tx.executeSql('SELECT * FROM FoodItem', [], querySuccess, errorCB);
+      }
+
+      function errorCB(err) {
+        alert("Error processing SQL: "+err.code);
+      }
+
+      function querySuccess(tx, results) {
+
+        var foodItemIndexText;
+        var len = results.rows.length;
+        for (var i = 0; i < len; i++) {
+          if (i%2 == 0) {
+            var foodItemText = '<div class="ui-block-a">';
+          } else {
+            var foodItemText = '<div class="ui-block-b">';
+          }
+          
+          foodItemText += '<a href="#"><img src="'
+                        + results.rows.item(i).link
+                        + '" class="ui-li-thumb"></a><span><p>' 
+                        + results.rows.item(i).name 
+                        + '<br>by <a href="#">' 
+                        + results.rows.item(i).store + '</a></p></span>';
+          foodItemText += "</div>";
+          foodItemIndexText += foodItemText;
+        }
+        
+        document.getElementById("food-item-list").innerHTML = foodItemIndexText;
+      }
  
     </script>
 
@@ -73,32 +125,7 @@
 
         <div data-role="main" content="ui-content">
             <div class="ui-grid-x">
-
-                <div class = "ui-block-a">
-                    <a href="#">
-                        <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb"></a><br>
-
-                        <span>Burrito Bowl<br> by <a href="#" >Chipotle</a></p></span>
-
-                    </div>
-                    <div class="ui-block-b"><a href="#">
-                        <img src="../www/img/taco.jpg" class="ui-li-thumb"></a>
-
-                        <span><p>Crispy Corn Tacos<br>by <a href="#">Taco Bell</a></p></span>
-
-                    </div>
-                    <div class ="ui-block-a"><a href="#">
-                        <img src="../www/img/salad.jpg" class="ui-li-thumb"></a><br>
-
-                        <span><p>Salad Bowl<br> Prepared by <a href="#">You</a></p></span>
-
-                    </div>
-                    <div class="ui-block-b"><a href="#">
-                        <img src="../www/img/burger.jpg" class="ui-li-thumb"></a>
-
-                        <span><p>Burger<br>by <a href="#">McDonalds</a></p></span>
-
-                    </div>
+              <div id="food-item-list"></div>   
             </div>
          </div>
 <!--Login Popup-->
