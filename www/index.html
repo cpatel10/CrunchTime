@@ -22,7 +22,7 @@
       var db = null;
 
       document.addEventListener('deviceready', function() {
-        db = window.sqlitePlugin.openDatabase({name: 'mydb4.db', location: 'default'});
+        db = window.sqlitePlugin.openDatabase({name: 'mydb5.db', location: 'default'});
         
         populateDB();
         db.transaction(queryDB, errorCB);
@@ -34,7 +34,7 @@
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
             ['Burrito Bowl', 25, 'Chipotle', '../www/img/burritoBowl.jpg']);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Crispy Corn Tacos', 30, 'Taco Bell', '../www/img/salad.jpg']);
+            ['Crispy Corn Tacos', 30, 'Taco Bell', '../www/img/taco.jpg']);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
             ['Quarter Pounder', 15, 'McDonalds', '../www/img/burger.jpg']);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
@@ -77,7 +77,20 @@
         
         document.getElementById("food-item-list").innerHTML = foodItemIndexText;
       }
- 
+
+      function goSearch() {
+            
+        db.transaction(searchQueryDB, errorCB);
+      }
+
+      function searchQueryDB(tx) {
+        tx.executeSql("SELECT * FROM FoodItem where name like ('%"+ document.getElementById("search-basic").value + "%')", [], querySuccess, errorCB);
+      }
+
+      $('#searchButton').submit(function(){
+        goSearch();
+      })
+
     </script>
 
     <title>CrunchTime</title>
@@ -116,8 +129,11 @@
 
             <div class="search">
             <label for="search-basic" class="ui-hidden-accessible" data-mini="true">Search Input:</label>
+            
             <input type="search" name="search" id="search-basic" placeholder="search" style="text-align: center" />
                 </div>
+
+            <button id="searchButton" onclick="goSearch()">Search</button>
 
             <div class="advancedSearch"><p><a href="#searchPage">Advanced Search</a></p></div>
 
