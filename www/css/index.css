@@ -163,6 +163,11 @@ h3{
     filter: blur(2px);
 }
 
+.nav-menu {
+  position: absolute;
+  z-index: 100;
+  right: 0px;
+}
 
 /*.ui-block-a, .ui-block-b{*/
     /*padding:10px;*/
