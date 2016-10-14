@@ -78,8 +78,7 @@
         document.getElementById("food-item-list").innerHTML = foodItemIndexText;
       }
 
-      function goSearch() {
-            
+      function goSearch() {   
         db.transaction(searchQueryDB, errorCB);
       }
 
@@ -90,6 +89,26 @@
       $('#searchButton').submit(function(){
         goSearch();
       })
+
+      $(document).ready(function(){
+        $("#time-selector").change(function() {
+          filterFoodItems();
+      });
+
+      function filterFoodItems(){
+        db.transaction(filterQueryDB, errorCB);
+      }
+
+      function filterQueryDB(tx) {
+        var desiredTime = $("#time-selector").val();
+        if (desiredTime <= 60) {
+          tx.executeSql("SELECT * FROM FoodItem where minutes <= " + desiredTime, [], querySuccess, errorCB);
+        } else {
+          db.transaction(queryDB, errorCB);
+        }
+      }
+});
+      
 
     </script>
 
@@ -116,13 +135,12 @@
         <div id="time1" content="ui-content">
                 <label for="time1">Have these items in </label></div>
                 <div id="time1-o">
-                <select name="time" id="time" data-inline="true" data-mini="true">
+                <select name="time" id="time-selector" data-inline="true" data-mini="true">
                     <option value="30">30 mins</option>
                     <option value="15">15 mins</option>
                     <option value="45">45 mins</option>
-                    <option value="1">1 hour</option>
-                    <option value="1.15"> > 1 hour</option>
-
+                    <option value="60">1 hour</option>
+                    <option value="61"> > 1 hour</option>
                 </select>
                     </div>
             </div>
