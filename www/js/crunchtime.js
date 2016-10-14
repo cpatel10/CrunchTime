@@ -24,13 +24,5 @@ function menuContentShow(){
     $(".one").css({"display":"block"});
 }
 
-$( "#loginPage" ).on( "popupbeforeposition", function () {
-    $.mobile.pageContainer.pagecontainer( "getActivePage" )
-        .not(this) /* exclude popup */
-        .addClass( "blur-filter" );
-}).on( "popupafterclose", function () {
-    $( ".blur-filter" )
-        .removeClass( "blur-filter" );
-});
 
 
