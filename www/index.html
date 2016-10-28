@@ -22,14 +22,41 @@
       var db = null;
 
       document.addEventListener('deviceready', function() {
-        db = window.sqlitePlugin.openDatabase({name: 'mydb6.db', location: 'default'});
+        
+        function onDeviceReady() {
+          navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        }
+
+        db = window.sqlitePlugin.openDatabase({name: 'mydb7.db', location: 'default'});
         
         populateDB();
         db.transaction(queryDB, errorCB);
       });
+
+      function onSuccess(position) {
+        var element = document.getElementById('geolocation');
+        element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
+                            'Longitude: '          + position.coords.longitude             + '<br />' +
+                            'Altitude: '           + position.coords.altitude              + '<br />' +
+                            'Accuracy: '           + position.coords.accuracy              + '<br />' +
+                            'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
+                            'Heading: '            + position.coords.heading               + '<br />' +
+                            'Speed: '              + position.coords.speed                 + '<br />' +
+                            'Timestamp: '          +                                   position.timestamp          + '<br />';
+      }
+
+      // onError Callback receives a [PositionError](PositionError/positionError.html) object
+      //
+      function onError(error) {
+          alert('code: '    + error.code    + '\n' +
+                'message: ' + error.message + '\n');
+      }
+
+      var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
       
       function populateDB() {
         db.transaction(function(tx) {
+          tx.executeSql('DROP TABLE FoodItem');
           tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (name, minutes, store, link)');
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
             ['Burrito Bowl', 15, 'Chipotle', '../www/img/burritoBowl.jpg']);
@@ -129,6 +156,7 @@
                     <ul class= "one nav-menu" data-role="listview" data-inset="true">
                         <li data-icon="false"><a href="#loginPage" data-rel="popup">Login</a></li>
                         <li data-icon="false"><a href="#signUpPage" data-rel="popup">Register</a></li>
+                        <li data-icon="false"><a href="#myPage">My Page</a></li>
                         <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
                     </ul>
         </div>
@@ -149,6 +177,8 @@
                 </select>
                     </div>
             </div>
+
+            <p id="geolocation">Finding geolocation...</p>
 
             <div class="search">
               <label for="search-basic" class="ui-hidden-accessible" data-mini="true">Search Input:</label>
@@ -209,7 +239,7 @@
         <div id="header1" data-role="header">
             <h1>CrunchTime</h1>
             <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
-            <ul class= "one" data-role="listview" data-inset="true">
+            <ul class= "one nav-menu" data-role="listview" data-inset="true">
                 <li data-icon="false"><a href="#homePage">Logout</a></li>
                 <li data-icon="false"><a href="#homePage">Home</a></li>
                 <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
