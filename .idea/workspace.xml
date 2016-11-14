@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0f2162d-2dbb-4968-9627-285d64a040a7" name="Default" comment="">
+    <list default="true" id="b0f2162d-2dbb-4968-9627-285d64a040a7" name="Default" comment="drop-down menu fixed, pop-up fixed and other minor changes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="$PROJECT_DIR$/plugins/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/index.css" afterPath="$PROJECT_DIR$/www/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/crunchtime.js" afterPath="$PROJECT_DIR$/www/js/crunchtime.js" />
     </list>
     <ignored path="crunchtime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +31,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crunchtime.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/crunchtime.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
+            <state relative-caret-position="200">
+              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -40,37 +56,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="353" column="37" selection-start-line="353" selection-start-column="37" selection-end-line="353" selection-end-column="37" />
+            <state relative-caret-position="275">
+              <caret line="156" column="107" selection-start-line="156" selection-start-column="107" selection-end-line="156" selection-end-column="107" />
               <folding>
-                <element signature="e#15458#15464#0" expanded="true" />
-                <element signature="e#15464#15470#0" expanded="true" />
-                <element signature="e#15470#15476#0" expanded="true" />
-                <element signature="e#15476#15482#0" expanded="true" />
-                <element signature="e#15482#15488#0" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#17609#17615#0" expanded="true" />
+                <element signature="e#17615#17621#0" expanded="true" />
+                <element signature="e#17621#17627#0" expanded="true" />
+                <element signature="e#17627#17633#0" expanded="true" />
+                <element signature="e#17633#17639#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="25">
+              <caret line="1" column="100" selection-start-line="1" selection-start-column="100" selection-end-line="1" selection-end-column="100" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crunchtime.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/crunchtime.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#45#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,20 +94,19 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/firstPHP.html" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="C:/Bitnami/wampstack-5.6.25-0/apache2/htdocs/index.php" />
         <option value="C:/Bitnami/wampstack-5.6.25-0/apache2/htdocs/main.css" />
+        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/js/crunchtime.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/css/index.css" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -110,10 +116,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-10" />
-    <option name="width" value="1934" />
-    <option name="height" value="1030" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -140,6 +150,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -186,14 +198,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunchtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunchtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunchtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crunchtime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,6 +245,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -213,1433 +256,10 @@
       <recent name="C:\crunchtime\www\css" />
     </key>
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/config.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/android.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/fetch.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/index.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/index.html</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/CONTRIBUTING.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/NOTICE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/RELEASENOTES.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/de/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/de/index.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/es/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/es/index.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/fr/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/fr/index.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/it/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/it/index.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ja/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ja/index.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ko/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ko/index.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/pl/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/pl/index.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/ru/index.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/zh/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/doc/zh/index.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/plugin.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/android/Notification.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/blackberry10/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/firefoxos/notification.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ios/CDVNotification.bundle/beep.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ios/CDVNotification.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ios/CDVNotification.m</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ubuntu/notification.cpp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ubuntu/notification.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/ubuntu/notification.qml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/windows/NotificationProxy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/wp/Notification.cs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/wp/NotificationBox.xaml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/wp/NotificationBox.xaml.cs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/src/wp/notification-beep.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/tests/plugin.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/tests/tests.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/android/notification.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/blackberry10/beep.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/blackberry10/notification-beep.wav</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/browser/notification.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/danger-press.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/danger.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/default.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/gradient.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/notification.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/pattern.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/firefoxos/recommend.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/notification.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-plugin-dialogs/www/windows/notification.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/AUTHORS.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/CHANGES.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/CONTRIBUTING.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/HISTORY.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/LICENSE.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/Lawnchair-adapter/Lawnchair-sqlitePlugin.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/Lawnchair-adapter/test-www/Lawnchair-sqlitePlugin.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/Lawnchair-adapter/test-www/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/Lawnchair-adapter/test-www/lawnchair-spec.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/Lawnchair-adapter/test-www/lib/json2.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/Lawnchair-adapter/test-www/lib/lawnchair.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/Lawnchair-adapter/test-www/lib/qunit.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/Lawnchair-adapter/test-www/lib/qunit.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/SQLitePlugin.coffee.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/bin/test.ps1</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/bin/test.sh</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/circle.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/.bin/shjs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/balanced-match/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/balanced-match/LICENSE.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/balanced-match/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/balanced-match/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/balanced-match/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/brace-expansion/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/brace-expansion/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/brace-expansion/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/concat-map/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/concat-map/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/concat-map/README.markdown</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/concat-map/example/map.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/concat-map/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/concat-map/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/concat-map/test/map.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/libs/arm64-v8a/libsqlc-native-driver.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/libs/armeabi-v7a/libsqlc-native-driver.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/libs/armeabi/libsqlc-native-driver.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/libs/sqlite-connector.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/libs/x86/libsqlc-native-driver.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/libs/x86_64/libsqlc-native-driver.so</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/sqlite3.c</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/cordova-sqlite-storage-dependencies/sqlite3.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/fs.realpath/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/fs.realpath/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/fs.realpath/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/fs.realpath/old.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/fs.realpath/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/glob/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/glob/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/glob/changelog.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/glob/common.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/glob/glob.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/glob/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/glob/sync.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/inflight/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/inflight/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/inflight/inflight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/inflight/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/inherits/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/inherits/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/inherits/inherits.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/inherits/inherits_browser.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/inherits/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/interpret/CHANGELOG</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/interpret/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/interpret/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/interpret/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/interpret/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/minimatch/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/minimatch/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/minimatch/minimatch.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/minimatch/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/once/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/once/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/once/once.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/once/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/path-is-absolute/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/path-is-absolute/license</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/path-is-absolute/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/path-is-absolute/readme.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/CHANGELOG</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/lib/extension.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/lib/normalize.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/lib/register.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/rechoir/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/example/async.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/example/sync.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/lib/async.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/lib/caller.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/lib/core.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/lib/core.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/lib/node-modules-paths.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/lib/sync.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/readme.markdown</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/core.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/dotdot.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/dotdot/abc/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/dotdot/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/faulty_basedir.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/filter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/filter_sync.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/mock.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/mock_sync.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/module_dir.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/module_dir/xmodules/aaa/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/module_dir/ymodules/aaa/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/module_dir/zmodules/bbb/main.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/module_dir/zmodules/bbb/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/node_path.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/node_path/x/aaa/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/node_path/x/ccc/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/node_path/y/bbb/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/node_path/y/ccc/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/nonstring.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/pathfilter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/pathfilter/deep_ref/main.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/pathfilter/deep_ref/node_modules/deep/alt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/pathfilter/deep_ref/node_modules/deep/deeper/ref.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/pathfilter/deep_ref/node_modules/deep/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/pathfilter/deep_ref/node_modules/deep/ref.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/precedence.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/precedence/aaa.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/precedence/aaa/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/precedence/aaa/main.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/precedence/bbb.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/precedence/bbb/main.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/bar/node_modules/foo/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/baz/doom.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/baz/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/baz/quux.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/biz/node_modules/garply/lib/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/biz/node_modules/garply/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/biz/node_modules/grux/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/biz/node_modules/tiv/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/cup.coffee</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/foo.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/incorrect_main/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/incorrect_main/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/mug.coffee</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/mug.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/other_path/lib/other-lib.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/other_path/root.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/punycode/node_modules/punycode/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/quux/foo/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/without_basedir/main.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver/without_basedir/node_modules/mymodule.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/resolver_sync.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/subdirs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/subdirs/node_modules/a/b/c/x.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/resolve/test/subdirs/node_modules/a/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/.editorconfig</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/.eslintrc.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/CHANGELOG.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/MAINTAINERS</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/bin/shjs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/global.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/make.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/plugin.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/scripts/generate-docs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/scripts/run-tests.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/shell.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/cat.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/cd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/chmod.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/common.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/cp.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/dirs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/echo.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/error.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/exec.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/find.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/grep.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/head.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/ln.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/ls.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/mkdir.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/mv.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/popd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/pushd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/pwd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/rm.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/sed.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/set.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/sort.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/tail.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/tempdir.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/to.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/toEnd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/touch.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/uniq.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/shelljs/src/which.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/wrappy/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/wrappy/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/wrappy/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules/wrappy/wrappy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/plugin.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/scripts/beforePluginInstall.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/scripts/prepareSpec.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/config.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/lib/jasmine-2.4.1/boot.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/lib/jasmine-2.4.1/console.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/lib/jasmine-2.4.1/jasmine-html.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/lib/jasmine-2.4.1/jasmine.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/lib/jasmine-2.4.1/jasmine.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/lib/jasmine-2.4.1/jasmine_favicon.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/basic-db-tx-sql-storage-results.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/browser-check-startup.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-open-close-delete-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-simultaneous-tx-access-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-sql-operations-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-tx-error-handling-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-tx-error-mapping-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-tx-multiple-update-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-tx-sql-features-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-tx-sql-select-value-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-tx-string-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/db-tx-value-bindings-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/ext-tx-blob-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/regexp-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/self-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/sql-batch-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/spec/www/spec/tx-semantics-test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/android/io/sqlc/SQLiteAndroidDatabase.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/android/io/sqlc/SQLiteConnectorDatabase.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/android/io/sqlc/SQLitePlugin.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/ios/SQLitePlugin.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/ios/SQLitePlugin.m</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/Constants.cpp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/Constants.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/Database.cpp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/Database.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/SQLite3.Shared.vcxitems</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/SQLite3.UWP/SQLite3.UWP.vcxproj</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/SQLite3.Windows/SQLite3.Windows.vcxproj</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/SQLite3.WindowsPhone/SQLite3.WindowsPhone.vcxproj</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/SQLite3.sln</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/Statement.cpp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/Statement.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/pch.cpp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3/pch.h</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/SQLite3-Win-RT/SQLite3JS/js/SQLite3.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/src/windows/sqlite-proxy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/tests/plugin.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/tests/tests.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/cordova-sqlite-storage/www/SQLitePlugin.js</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/AndroidManifest.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/AndroidManifest.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build.gradle</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/generated/source/buildConfig/debug/org/apache/cordova/BuildConfig.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/AndroidManifest.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/AuthenticationToken.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/BuildConfig.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CallbackContext.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CallbackMap.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Config.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ConfigXmlParser.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$2.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$3.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$4$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$4.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaArgs.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaBridge.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaClientCertRequest.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$2.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$3.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$4.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$5.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$6.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$7.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$8.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$9.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$Result.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaHttpAuthHandler.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterface.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterfaceImpl$ActivityResultHolder.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterfaceImpl.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPlugin.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPreferences.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi$OpenForReadResult.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebView.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine$Client.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine$EngineView.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$2.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$3.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient$1$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$2.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$3.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$4.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$5.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ExposedJsApi.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaClientCertRequest.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaCookieManager.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaHttpAuthHandler.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/LOG.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$BridgeMode.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$JsMessage.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$NoOpBridgeMode.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginEntry.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginManager.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginResult$Status.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginResult.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ResumeCallback.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist$URLPattern.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemCookieManager.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemExposedJsApi.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$2.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$3.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$4.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$5.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebView.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewClient.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine$1.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine$2.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental-safeguard/debug/tag.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/compileDebugAidl/dependency.store</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugShaders/merger.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/cordova.gradle</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/project.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/AuthenticationToken.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CallbackContext.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CallbackMap.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Config.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ConfigXmlParser.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaActivity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaArgs.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaBridge.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaClientCertRequest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaDialogsHelper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaHttpAuthHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterface.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaInterfaceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPlugin.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaPreferences.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaResourceApi.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewEngine.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebViewImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CoreAndroid.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ExposedJsApi.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaClientCertRequest.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaCookieManager.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ICordovaHttpAuthHandler.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/LOG.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/NativeToJsMessageQueue.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginEntry.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginManager.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/PluginResult.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/ResumeCallback.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/Whitelist.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemCookieManager.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemExposedJsApi.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebChromeClient.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebView.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewClient.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/engine/SystemWebViewEngine.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/android.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/cordova-js-src/android/nativeapiprovider.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/cordova-js-src/android/promptbasednativeapi.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/cordova-js-src/exec.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/cordova-js-src/platform.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/cordova-js-src/plugin/android/app.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/cordova.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/css/index.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/css/style.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/img/bars-black.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/img/burger.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/img/burritoBowl.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/img/fries.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/img/logo.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/img/salad.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/img/sandwich.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/img/taco.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/assets/www/js/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/build.gradle</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/.jshintrc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/Api.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/android_sdk_version</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/build</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/build.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/check_reqs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/check_reqs.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/clean</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/clean.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/defaults.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/Adb.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/AndroidManifest.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/AndroidProject.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/android_sdk_version.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/build.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/builders/AntBuilder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/builders/GenericBuilder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/builders/GradleBuilder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/builders/builders.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/check_reqs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/device.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/emulator.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/install-device</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/install-device.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/install-emulator.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/list-devices</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/list-devices.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/list-emulator-images.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/list-started-emulators.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/log.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/plugin-build.gradle</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/pluginHandlers.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/prepare.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/retry.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/run.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/lib/start-emulator.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/log</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/log.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/loggingHelper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/abbrev/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/abbrev/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/abbrev/abbrev.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/abbrev/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/.jshintrc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/History.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/examples/beep/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/examples/clear/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/examples/cursorPosition.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/examples/progress/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/lib/ansi.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/lib/newlines.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/ansi/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/LICENSE.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/balanced-match/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/LICENSE.MIT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/bench/bench.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/lib/b64.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/test/convert.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/base64-js/test/url-safe.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/BigInteger.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/BigInteger.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/big-integer/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/bplistParser.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/airplay.bplist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/iTunes-small.bplist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/int64.bplist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/int64.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/parseTest.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/sample1.bplist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/sample2.bplist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/uid.bplist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/utf16.bplist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/bplist-parser/test/utf16_chinese.plist</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/brace-expansion/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/brace-expansion/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/brace-expansion/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/README.markdown</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/example/map.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/concat-map/test/map.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.jscs.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.jshintignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/.ratignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/RELEASENOTES.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/cordova-common.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/.jshintrc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ActionStack.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigChanges.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigFile.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigChanges/ConfigKeeper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigChanges/munge-util.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigParser/ConfigParser.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/ConfigParser/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/CordovaCheck.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/CordovaError/CordovaError.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/CordovaError/CordovaExternalToolErrorContext.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/CordovaLogger.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/FileUpdater.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/PlatformJson.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/PluginInfo/PluginInfo.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/PluginInfo/PluginInfoProvider.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/PluginManager.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/events.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/superspawn.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/util/addProperty.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/util/plist-helpers.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-common/src/util/xml-helpers.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/cordova-registry-mapper/tests/test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/CHANGES.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/LICENSE.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/Makefile</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/NOTICE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/constants.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/elementpath.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/elementtree.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/errors.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/parser.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/parsers/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/parsers/sax.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/sprintf.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/treebuilder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/lib/utils.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/tests/data/xml1.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/tests/data/xml2.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/elementtree/tests/test-simple.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/common.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/glob.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/glob/sync.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inflight/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inflight/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inflight/inflight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inflight/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/inherits.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/inherits_browser.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/inherits/test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/chunk.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/compact.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/difference.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/drop.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/dropRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/dropRightWhile.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/dropWhile.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/fill.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/findIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/findLastIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/first.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/flatten.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/flattenDeep.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/head.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/indexOf.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/initial.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/intersection.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/last.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/lastIndexOf.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/object.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/pull.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/pullAt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/remove.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/rest.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/slice.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/sortedIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/sortedLastIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/tail.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/take.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/takeRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/takeRightWhile.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/takeWhile.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/union.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/uniq.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/unique.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/unzip.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/unzipWith.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/without.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/xor.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/zip.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/zipObject.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/array/zipWith.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/chain.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/commit.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/concat.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/lodash.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/plant.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/reverse.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/run.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/tap.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/thru.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/toJSON.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/toString.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/value.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/valueOf.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperChain.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperCommit.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperConcat.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperPlant.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperReverse.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperToString.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/chain/wrapperValue.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/all.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/any.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/at.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/collect.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/contains.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/countBy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/detect.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/each.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/eachRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/every.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/filter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/find.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/findLast.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/findWhere.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/foldl.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/foldr.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/forEach.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/forEachRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/groupBy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/include.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/includes.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/indexBy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/inject.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/invoke.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/map.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/max.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/partition.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/pluck.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/reduce.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/reduceRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/reject.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sample.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/select.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/shuffle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/size.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/some.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sortBy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sortByAll.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sortByOrder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/sum.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/collection/where.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/date.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/date/now.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/after.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/ary.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/backflow.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/before.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/bind.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/bindAll.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/bindKey.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/compose.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/curry.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/curryRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/debounce.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/defer.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/delay.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/flow.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/flowRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/memoize.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/modArgs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/negate.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/once.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/partial.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/partialRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/rearg.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/restParam.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/spread.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/throttle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/function/wrap.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/LazyWrapper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/LodashWrapper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/MapCache.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/SetCache.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayConcat.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayCopy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayEach.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayEachRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayEvery.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayExtremum.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayFilter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayMap.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayPush.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayReduce.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arrayReduceRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arraySome.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/arraySum.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/assignDefaults.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/assignOwnDefaults.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/assignWith.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseAssign.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseAt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseCallback.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseClone.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseCompareAscending.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseCopy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseCreate.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseDelay.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseDifference.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseEach.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseEachRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseEvery.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseExtremum.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFill.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFilter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFind.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFindIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFlatten.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFor.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseForIn.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseForOwn.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseForOwnRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseForRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseFunctions.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseGet.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIndexOf.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIsEqual.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIsEqualDeep.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIsFunction.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseIsMatch.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseLodash.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMap.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMatches.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMatchesProperty.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMerge.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseMergeDeep.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseProperty.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/basePropertyDeep.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/basePullAt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseRandom.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseReduce.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSetData.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSlice.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSome.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSortBy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSortByOrder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseSum.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseToString.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseUniq.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseValues.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseWhile.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/baseWrapperValue.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/binaryIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/binaryIndexBy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/bindCallback.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/bufferClone.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/cacheIndexOf.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/cachePush.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/charsLeftIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/charsRightIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/compareAscending.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/compareMultiple.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/composeArgs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/composeArgsRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createAggregator.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createAssigner.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createBaseEach.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createBaseFor.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createBindWrapper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createCache.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createCompounder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createCtorWrapper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createCurry.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createDefaults.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createExtremum.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createFind.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createFindIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createFindKey.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createFlow.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createForEach.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createForIn.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createForOwn.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createHybridWrapper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createObjectMapper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createPadDir.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createPadding.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createPartial.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createPartialWrapper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createReduce.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createRound.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createSortedIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/createWrapper.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/deburrLetter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/equalArrays.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/equalByTag.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/equalObjects.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/escapeHtmlChar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/escapeRegExpChar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/escapeStringChar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getData.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getFuncName.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getLength.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getMatchData.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getNative.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/getView.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/indexOfNaN.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/initCloneArray.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/initCloneByTag.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/initCloneObject.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/invokePath.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isArrayLike.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isIterateeCall.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isKey.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isLaziable.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isLength.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isObjectLike.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isSpace.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/isStrictComparable.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/lazyClone.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/lazyReverse.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/lazyValue.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mapDelete.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mapGet.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mapHas.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mapSet.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mergeData.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/mergeDefaults.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/metaMap.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/pickByArray.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/pickByCallback.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/reEscape.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/reEvaluate.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/reInterpolate.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/realNames.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/reorder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/replaceHolders.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/setData.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/shimKeys.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/sortedUniq.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/toIterable.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/toObject.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/toPath.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/trimmedLeftIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/trimmedRightIndex.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/unescapeHtmlChar.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/internal/wrapperClone.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/clone.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/cloneDeep.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/eq.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/gt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/gte.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isArguments.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isArray.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isBoolean.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isDate.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isElement.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isEmpty.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isEqual.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isError.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isFinite.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isFunction.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isMatch.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isNaN.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isNative.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isNull.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isNumber.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isObject.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isPlainObject.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isRegExp.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isString.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isTypedArray.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/isUndefined.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/lt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/lte.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/toArray.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/lang/toPlainObject.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/add.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/ceil.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/floor.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/max.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/round.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/math/sum.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/number.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/number/inRange.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/number/random.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/assign.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/create.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/defaults.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/defaultsDeep.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/extend.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/findKey.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/findLastKey.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/forIn.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/forInRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/forOwn.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/forOwnRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/functions.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/get.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/has.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/invert.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/keys.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/keysIn.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/mapKeys.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/mapValues.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/merge.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/methods.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/omit.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/pairs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/pick.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/result.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/set.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/transform.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/values.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/object/valuesIn.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/camelCase.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/capitalize.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/deburr.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/endsWith.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/escape.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/escapeRegExp.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/kebabCase.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/pad.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/padLeft.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/padRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/parseInt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/repeat.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/snakeCase.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/startCase.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/startsWith.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/template.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/templateSettings.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/trim.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/trimLeft.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/trimRight.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/trunc.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/unescape.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/string/words.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/support.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/attempt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/callback.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/constant.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/identity.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/iteratee.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/matches.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/matchesProperty.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/method.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/methodOf.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/mixin.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/noop.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/property.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/propertyOf.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/range.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/times.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/lodash/utility/uniqueId.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/minimatch/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/minimatch/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/minimatch/minimatch.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/minimatch/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/bin/nopt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/examples/my-program.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/lib/nopt.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/nopt/test/basic.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/once/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/once/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/once/once.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/once/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/os-homedir/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/os-homedir/license</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/os-homedir/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/os-homedir/readme.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/os-tmpdir/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/os-tmpdir/license</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/os-tmpdir/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/os-tmpdir/readme.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/osenv.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/test/unix.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/test/windows.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/osenv/x.tap</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/path-is-absolute/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/path-is-absolute/license</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/path-is-absolute/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/path-is-absolute/readme.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/.jshintrc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/History.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/Makefile</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/dist/plist-build.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/dist/plist-parse.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/dist/plist.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/examples/browser/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/lib/build.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/lib/node.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/lib/parse.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/lib/plist.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/plist/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/README.markdown</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/play-ground.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/ReadProperties.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/ReadProperties.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/test-cases-copy.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/test-cases.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/properties-parser/test/test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/q/CHANGES.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/q/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/q/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/q/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/q/q.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/q/queue.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/AUTHORS</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/big-not-pretty.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/example.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/get-products.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/hello-world.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/not-pretty.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/pretty-print.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/shopping.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/strict.dtd</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/switch-bench.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/test.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/examples/test.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/lib/sax.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/buffer-overrun.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata-chunked.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata-end-split.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata-fake-end.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata-multiple.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/cdata.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-23.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-30.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-35.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-47.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/issue-49.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/parser-position.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/script.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/self-closing-child-strict.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/self-closing-child.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/self-closing-tag.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/stray-ending.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/trailing-non-whitespace.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/unquoted.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-issue-41.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-rebinding.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-strict.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-unbound.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-xml-default-prefix.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/sax/test/xmlns-xml-default-redefine.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/bin/semver</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/range.bnf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/semver/semver.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/.documentup.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/.jshintrc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/RELEASE.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/bin/shjs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/global.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/make.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/scripts/generate-docs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/scripts/run-tests.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/shell.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/cat.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/cd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/chmod.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/common.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/cp.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/dirs.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/echo.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/error.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/exec.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/find.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/grep.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/ln.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/ls.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/mkdir.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/mv.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/popd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/pushd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/pwd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/rm.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/sed.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/tempdir.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/test.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/to.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/toEnd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/shelljs/src/which.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/underscore-min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/underscore-min.map</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/underscore/underscore.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/unorm/LICENSE.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/unorm/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/unorm/lib/unorm.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/unorm/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/History.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/browser.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/node.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/util-deprecate/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/wrappy/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/wrappy/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/wrappy/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/wrappy/wrappy.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLAttribute.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLBuilder.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLCData.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLComment.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDTDAttList.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDTDElement.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDTDEntity.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDTDNotation.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDeclaration.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLDocType.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLElement.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLNode.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLProcessingInstruction.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLRaw.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLStringifier.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/XMLText.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/lib/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmlbuilder/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/.npmignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/__package__.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/changelog</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/component.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/dom-parser.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/dom.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/readme.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/node_modules/xmldom/sax.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/run</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/run.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/version</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/cordova/version.bat</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/android/nativeapiprovider.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/android/promptbasednativeapi.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/exec.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/platform.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/platform_www/cordova-js-src/plugin/android/app.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/platform_www/cordova.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/platform_www/cordova_plugins.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/project.properties</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-hdpi/icon.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-land-hdpi/screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-land-ldpi/screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-land-mdpi/screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-land-xhdpi/screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-ldpi/icon.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-mdpi/icon.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-port-hdpi/screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-port-ldpi/screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-port-mdpi/screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-port-xhdpi/screen.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/drawable-xhdpi/icon.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/values/strings.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/res/xml/config.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/settings.gradle</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/src/com/example/crunchtime/MainActivity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/android/src/org/apache/cordova/whitelist/WhitelistPlugin.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/platforms/platforms.json</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/crunchtime/www/index.html">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -1693,6 +313,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1723,7 +351,20 @@
       <workItem from="1476323118847" duration="9985000" />
       <workItem from="1476373296735" duration="2041000" />
       <workItem from="1476393446427" duration="4763000" />
-      <workItem from="1476458342190" duration="3507000" />
+      <workItem from="1476458342190" duration="5019000" />
+      <workItem from="1477074512596" duration="968000" />
+      <workItem from="1477537222897" duration="8000" />
+      <workItem from="1477670007930" duration="1927000" />
+      <workItem from="1478233681182" duration="3575000" />
+      <workItem from="1478273163667" duration="4145000" />
+      <workItem from="1478292090725" duration="650000" />
+      <workItem from="1478841995347" duration="3120000" />
+      <workItem from="1478876775206" duration="9895000" />
+      <workItem from="1478891435288" duration="4478000" />
+      <workItem from="1478991523331" duration="10000" />
+      <workItem from="1479008241770" duration="1869000" />
+      <workItem from="1479154913384" duration="3574000" />
+      <workItem from="1479160984225" duration="1129000" />
     </task>
     <task id="LOCAL-00001" summary="css still needs to be updates.">
       <created>1476292100685</created>
@@ -1764,16 +405,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82523000" />
+    <option name="totallyTimeSpent" value="119383000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="0" width="1934" height="1030" extended-state="0" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17730126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17552084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.50209206" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.49790794" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.49791667" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.019406393" sideWeight="0.47083333" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1804,21 +446,14 @@
     <MESSAGE value="all the links working. need changes in css." />
     <MESSAGE value="grid fixed" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="drop-down menu fixed, pop-up fixed and other minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="drop-down menu fixed, pop-up fixed and other minor changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/filterable/index.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/flipswitch/index.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/forms/index.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/forms-disabled/index.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/forms-field-contain/index.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/forms-gallery/index.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/forms-label-hidden-accessible/index.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/navigation-linking-pages/index.html" />
     <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/pages/samepagetransition.html" />
     <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/pages-dialog/dialog-buttons.html" />
     <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/pages-multi-page/index.html" />
@@ -1873,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1400">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1881,15 +515,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/plugins/android.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-sqlite-storage/www/SQLitePlugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crunchtime-db-diagram-20171007.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cordova-sqlite-storage/SQLitePlugin.coffee.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3000">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1901,34 +552,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10211">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/cordova.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6150">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/cordova_plugins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/crunchtime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="e#0#45#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="353" column="37" selection-start-line="353" selection-start-column="37" selection-end-line="353" selection-end-column="37" />
+        <state relative-caret-position="275">
+          <caret line="156" column="107" selection-start-line="156" selection-start-column="107" selection-end-line="156" selection-end-column="107" />
           <folding>
-            <element signature="e#15458#15464#0" expanded="true" />
-            <element signature="e#15464#15470#0" expanded="true" />
-            <element signature="e#15470#15476#0" expanded="true" />
-            <element signature="e#15476#15482#0" expanded="true" />
-            <element signature="e#15482#15488#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#17609#17615#0" expanded="true" />
+            <element signature="e#17615#17621#0" expanded="true" />
+            <element signature="e#17621#17627#0" expanded="true" />
+            <element signature="e#17627#17633#0" expanded="true" />
+            <element signature="e#17633#17639#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/index.css">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
+        <state relative-caret-position="25">
+          <caret line="1" column="100" selection-start-line="1" selection-start-column="100" selection-end-line="1" selection-end-column="100" />
           <folding />
         </state>
       </provider>
