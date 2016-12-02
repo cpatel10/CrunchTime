@@ -57,24 +57,24 @@
 
       function populateDB() {
         db.transaction(function(tx) {
-          tx.executeSql('DROP TABLE FoodItem');
-          tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (name, minutes, store, link)');
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Burrito Bowl', 15, 'Chipotle', '../www/img/burritoBowl.jpg']);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Crispy Corn Tacos', 20, 'Taco Bell', '../www/img/taco.jpg']);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Quarter Pounder', 25, 'McDonalds', '../www/img/burger.jpg']);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Salad Bowl', 40, 'You', '../www/img/salad.jpg']);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Fries', 20, 'Bop\'N Grill', '../www/img/fries.jpg']);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Sandwich', 13, 'Subway', '../www/img/sandwich.jpg']);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Chicken Wrap', 35, 'You', '../www/img/wrap.jpg']);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?)', 
-            ['Pizza', 15, 'Blaze', '../www/img/pizza.jpg']);
+          tx.executeSql('DROP TABLE IF EXISTS FoodItem');
+          tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (name, minutes, store, link, latitude, longitude)');
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
+            ['Burrito Bowl', 15, 'Chipotle', '../www/img/burritoBowl.jpg', 42.002776, -87.660919]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
+            ['Crispy Corn Tacos', 20, 'Taco Bell', '../www/img/taco.jpg', 42.000100, -87.660321]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
+            ['Quarter Pounder', 25, 'McDonalds', '../www/img/burger.jpg', 41.995748, -87.659353]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
+            ['Salad Bowl', 40, 'You', '../www/img/salad.jpg', 41.999934, -87.660238]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
+            ['Fries', 20, 'Bop\'N Grill', '../www/img/fries.jpg', 42.002830, -87.660926]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
+            ['Sandwich', 13, 'Subway', '../www/img/sandwich.jpg', 41.999757, -87.660311]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
+            ['Chicken Wrap', 35, 'You', '../www/img/wrap.jpg', 41.999934, -87.660238]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
+            ['Pizza', 15, 'Blaze', '../www/img/pizza.jpg', 42.001662, -87.660960]);
 
         }, function(error) {
           alert('Transaction ERROR: ' + error.message);
@@ -106,7 +106,7 @@
                         + results.rows.item(i).link
                         + '" class="ui-li-thumb"></a><span><p>' 
                         + results.rows.item(i).name 
-                        + '<br>by <a href="#">' 
+                        + '<br>by <a href="#popupMap" data-rel="popup">' 
                         + results.rows.item(i).store + '</a></p></span>';
           foodItemText += "</div>";
           foodItemIndexText += foodItemText;
@@ -180,6 +180,16 @@
             </div>
 
             <p id="geolocation">Finding geolocation...</p>
+
+            
+
+            <div data-role="popup" id="popupMap" data-overlay-theme="b" data-theme="b" data-corners="false" data-tolerance="15,15">
+ 
+              <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+           
+              <iframe src="map.html" width="480" height="320" seamless></iframe>
+           
+            </div>
 
             <div class="search">
               <label for="search-basic" class="ui-hidden-accessible" data-mini="true">Search Input:</label>
