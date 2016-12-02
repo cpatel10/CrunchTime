@@ -58,6 +58,7 @@
       function populateDB() {
         db.transaction(function(tx) {
           tx.executeSql('DROP TABLE IF EXISTS FoodItem');
+          
           tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (name, minutes, store, link, latitude, longitude)');
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
             ['Burrito Bowl', 15, 'Chipotle', '../www/img/burritoBowl.jpg', 42.002776, -87.660919]);
@@ -75,6 +76,9 @@
             ['Chicken Wrap', 35, 'You', '../www/img/wrap.jpg', 41.999934, -87.660238]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
             ['Pizza', 15, 'Blaze', '../www/img/pizza.jpg', 42.001662, -87.660960]);
+
+          tx.executeSql('DROP TABLE IF EXISTS Favorites');
+          tx.executeSql('CREATE TABLE IF NOT EXISTS Favorites (name, minutes, store, link, latitude, longitude, userid)');
 
         }, function(error) {
           alert('Transaction ERROR: ' + error.message);
