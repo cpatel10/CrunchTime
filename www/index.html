@@ -58,24 +58,29 @@
       function populateDB() {
         db.transaction(function(tx) {
           tx.executeSql('DROP TABLE IF EXISTS FoodItem');
-          tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (name, minutes, store, link, latitude, longitude)');
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
-            ['Burrito Bowl', 15, 'Chipotle', '../www/img/burritoBowl.jpg', 42.002776, -87.660919]);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
-            ['Crispy Corn Tacos', 20, 'Taco Bell', '../www/img/taco.jpg', 42.000100, -87.660321]);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
-            ['Quarter Pounder', 25, 'McDonalds', '../www/img/burger.jpg', 41.995748, -87.659353]);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
-            ['Salad Bowl', 40, 'You', '../www/img/salad.jpg', 41.999934, -87.660238]);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
-            ['Fries', 20, 'Bop\'N Grill', '../www/img/fries.jpg', 42.002830, -87.660926]);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
-            ['Sandwich', 13, 'Subway', '../www/img/sandwich.jpg', 41.999757, -87.660311]);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
-            ['Chicken Wrap', 35, 'You', '../www/img/wrap.jpg', 41.999934, -87.660238]);
-          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?)', 
-            ['Pizza', 15, 'Blaze', '../www/img/pizza.jpg', 42.001662, -87.660960]);
-
+          tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (name, minutes, store, ingredients, link, latitude, longitude)');
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+            ['Burrito Bowl', 15, 'Chipotle', 'Salsa Pico de Gallo pinto beans rotisserie chicken tortillas cilantro white rice Monterey jack cheese guacamole','../www/img/burritoBowl.jpg', 42.002776, -87.660919]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+            ['Crispy Corn Tacos', 20, 'Taco Bell', 'Crispy taco shells white cheddar jack cheese corn salsa lettuce boneless chicken breasts taco seasoning paprika', '../www/img/taco.jpg', 42.000100, -87.660321]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+            ['Quarter Pounder', 25, 'McDonalds', 'Beef patty sesame seed bun American cheese ketchup pickles slices onions mustard', '../www/img/burger.jpg', 41.995748, -87.659353]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+            ['Salad Bowl', 40, 'You', 'romaine spinach brussel sprouts sweet potato cucumber carrots avocado onions tomatoes olive oil', '../www/img/salad.jpg', 41.999934, -87.660238]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+            ['Fries', 20, 'Bop\'N Grill', 'potatoes vegetable oil', '../www/img/frenchfries.png', 42.002830, -87.660926]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+            ['Sandwich', 13, 'Subway', 'Artisan grilled chicken filet artisan roll tomato slice lettuce vinaigrette sauce herb seasoning','../www/img/sandwich.jpg', 41.999757, -87.660311]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+            ['Chicken Wrap', 35, 'You', 'chicken breast olive oil garlic sour cream dressing cherry tomatoes romaine lettuce croutons tortillas', '../www/img/wrap.jpg', 41.999934, -87.660238]);
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+            ['Pizza', 15, 'Blaze', 'White cream sauce with mozzarella Applewood bacon chopped garlic oregano arugula','../www/img/pizza.jpg', 42.001662, -87.660960]);
+            tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+                    ['Pie Pizza', 15, 'Blaze', 'Mozzarella parmesan red sauce','../www/img/pizza.jpg', 42.001662, -87.660960]);
+            tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+                    ['BBQ Chicken Pizza', 15, 'Blaze', 'Grilled chicken mozzarella red onion banana peppers gorgonzola bbq sauce drizzle','../www/img/pizza.jpg', 42.001662, -87.660960]);
+            tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
+                    ['Green Stripe Pizza', 15, 'Blaze', 'Pesto drizzle over grilled chicken roasted red peppers chopped garlic mozzarella arugula','../www/img/pizza.jpg', 42.001662, -87.660960]);
         }, function(error) {
           alert('Transaction ERROR: ' + error.message);
         }, function() {

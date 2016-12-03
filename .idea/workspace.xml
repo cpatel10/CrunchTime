@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0f2162d-2dbb-4968-9627-285d64a040a7" name="Default" comment="drop-down menu fixed, pop-up fixed and other minor changes">
+    <list default="true" id="b0f2162d-2dbb-4968-9627-285d64a040a7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/burger.jpg" afterPath="$PROJECT_DIR$/www/img/burger.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/burritoBowl.jpg" afterPath="$PROJECT_DIR$/www/img/burritoBowl.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/fries.jpg" afterPath="$PROJECT_DIR$/www/img/fries.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/pizza.jpg" afterPath="$PROJECT_DIR$/www/img/pizza.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/salad.jpg" afterPath="$PROJECT_DIR$/www/img/salad.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/sandwich.jpg" afterPath="$PROJECT_DIR$/www/img/sandwich.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/taco.jpg" afterPath="$PROJECT_DIR$/www/img/taco.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/wrap.jpg" afterPath="$PROJECT_DIR$/www/img/wrap.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/android.json" afterPath="$PROJECT_DIR$/plugins/android.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/fetch.json" afterPath="$PROJECT_DIR$/plugins/fetch.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/index.css" afterPath="$PROJECT_DIR$/www/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/crunchtime.js" afterPath="$PROJECT_DIR$/www/js/crunchtime.js" />
     </list>
     <ignored path="crunchtime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,23 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="crunchtime.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/crunchtime.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#45#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,27 +48,43 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="156" column="107" selection-start-line="156" selection-start-column="107" selection-end-line="156" selection-end-column="107" />
+            <state relative-caret-position="1750">
+              <caret line="70" column="95" selection-start-line="70" selection-start-column="95" selection-end-line="70" selection-end-column="95" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#17609#17615#0" expanded="true" />
-                <element signature="e#17615#17621#0" expanded="true" />
-                <element signature="e#17621#17627#0" expanded="true" />
-                <element signature="e#17627#17633#0" expanded="true" />
-                <element signature="e#17633#17639#0" expanded="true" />
+                <element signature="e#19784#19790#0" expanded="true" />
+                <element signature="e#19790#19796#0" expanded="true" />
+                <element signature="e#19796#19802#0" expanded="true" />
+                <element signature="e#19802#19808#0" expanded="true" />
+                <element signature="e#19808#19814#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="frenchfries.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/img/frenchfries.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="100" selection-start-line="1" selection-start-column="100" selection-end-line="1" selection-end-column="100" />
+            <state relative-caret-position="500">
+              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,8 +113,8 @@
         <option value="C:/Bitnami/wampstack-5.6.25-0/apache2/htdocs/main.css" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/js/crunchtime.js" />
-        <option value="$PROJECT_DIR$/www/css/index.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/css/index.css" />
       </list>
     </option>
   </component>
@@ -150,8 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,25 +204,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crunchtime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crunchtime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,10 +224,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/lab4_fv_skeleton" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -364,7 +354,15 @@
       <workItem from="1478991523331" duration="10000" />
       <workItem from="1479008241770" duration="1869000" />
       <workItem from="1479154913384" duration="3574000" />
-      <workItem from="1479160984225" duration="1129000" />
+      <workItem from="1479160984225" duration="2975000" />
+      <workItem from="1479333873951" duration="1637000" />
+      <workItem from="1479485261635" duration="1197000" />
+      <workItem from="1479499184320" duration="907000" />
+      <workItem from="1479502794892" duration="4003000" />
+      <workItem from="1480016628861" duration="1193000" />
+      <workItem from="1480141437578" duration="91000" />
+      <workItem from="1480702183470" duration="6498000" />
+      <workItem from="1480751668073" duration="1009000" />
     </task>
     <task id="LOCAL-00001" summary="css still needs to be updates.">
       <created>1476292100685</created>
@@ -401,25 +399,32 @@
       <option name="project" value="LOCAL" />
       <updated>1476466115909</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="drop-down menu fixed, pop-up fixed and other minor changes">
+      <created>1479165871574</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1479165871574</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119383000" />
+    <option name="totallyTimeSpent" value="137764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17552084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.49791667" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.019406393" sideWeight="0.47083333" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.017123288" sideWeight="0.53333336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.017123288" sideWeight="0.46666667" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -454,10 +459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/pages/samepagetransition.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/pages-dialog/dialog-buttons.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/pages-multi-page/index.html" />
-    <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/panel/index.html" />
     <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/popup/index.html" />
     <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/navbar/index.html" />
     <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/navigation/index.html" />
@@ -495,11 +496,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/img/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/img/burger.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -544,14 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10211">
@@ -580,45 +568,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/burger.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/bars-black.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/crunchtime.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/img/frenchfries.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="70" column="95" selection-start-line="70" selection-start-column="95" selection-end-line="70" selection-end-column="95" />
           <folding>
-            <element signature="e#0#45#0" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#19784#19790#0" expanded="true" />
+            <element signature="e#19790#19796#0" expanded="true" />
+            <element signature="e#19796#19802#0" expanded="true" />
+            <element signature="e#19802#19808#0" expanded="true" />
+            <element signature="e#19808#19814#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="156" column="107" selection-start-line="156" selection-start-column="107" selection-end-line="156" selection-end-column="107" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#17609#17615#0" expanded="true" />
-            <element signature="e#17615#17621#0" expanded="true" />
-            <element signature="e#17621#17627#0" expanded="true" />
-            <element signature="e#17627#17633#0" expanded="true" />
-            <element signature="e#17633#17639#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="100" selection-start-line="1" selection-start-column="100" selection-end-line="1" selection-end-column="100" />
+        <state relative-caret-position="616">
+          <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
           <folding />
         </state>
       </provider>

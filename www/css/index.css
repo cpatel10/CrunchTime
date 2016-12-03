@@ -13,7 +13,7 @@ body {
     font-size:8px;
     height:100%;
     margin:10px;
-    padding:0px;
+    padding:0;
 
     width:100%;
 }
@@ -85,7 +85,8 @@ body{
 
 }
 #homePage, #aboutUsPage, #loginPage , #signUpPage, #myPage, #searchPage, #searchResultPage{
-    background-color: #ffffff;
+    background-color: #f9f9f9;
+    /*background-color: #ffffff;*/
 }
 
 #header, #header1, #header2, #header3,#header4{
@@ -97,7 +98,7 @@ body{
 
 
 }
-.ui.header{
+.ui-header .ui-title{
     text-align: left;
 }
 
@@ -117,9 +118,10 @@ h1{
 
 
 
-.search,.tp{
+.search{
     /*width: 20%;*/
-    margin: 10px auto;
+padding-right: 10px;
+    padding-left: 10px;
 
 }
 
@@ -139,14 +141,22 @@ h1{
 
     margin: 0 auto;
     position: relative;
+    padding:5px;
 
 }
 
 
-.ui-block-a, .ui-block-b{
-    width:50%;
-    padding-right: 30px;
+.ui-block-a{
+    width:48%;
+    padding: 3px;
+    border: black 1px solid;
 
+}
+
+.ui-block-b{
+    width:48%;
+    padding: 3px;
+    border: black 1px solid;
 }
 
 
