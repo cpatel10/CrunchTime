@@ -133,8 +133,11 @@
       }
 
       function advancedSearchQueryDB(tx) {
-        tx.executeSql("SELECT * FROM FoodItem where name like ('%"+ document.getElementById("advanced-search").value + "%')", [], querySuccess, errorCB);
-        // alert($.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ));
+        var desiredTime = $("#time-selector2").val();
+        var foodItemName = $("#advanced-search").val();
+        var ingredients = $("#ingredients-search").val();
+        // tx.executeSql("SELECT * FROM FoodItem where name like ('%"+ document.getElementById("advanced-search").value + "%')", [], querySuccess, errorCB);
+        tx.executeSql("SELECT * FROM FoodItem where (name like '%"+ foodItemName + "%')" + " AND (ingredients like '%" + ingredients + "%')" + " AND (minutes <= " + desiredTime + " )", [], querySuccess, errorCB);
         $.mobile.changePage("#homePage");
       }
 
@@ -326,40 +329,34 @@
         </div><br><br>
         <div data-role="main" content="ui-content">
 
-            <label><input type="radio" name="radio-choice-0" id="radio-choice-0a" data-mini="true">Vegan </label>
-            <label for="radio-choice-0b">Vegetarian</label>
-            <input type="radio" name="radio-choice-0" id="radio-choice-0b" class="custom" data-mini="true"><br>
+          <label><input type="radio" name="radio-choice-0" id="radio-choice-0a" data-mini="true">Vegan </label>
+          <label for="radio-choice-0b">Vegetarian</label>
+          <input type="radio" name="radio-choice-0" id="radio-choice-0b" class="custom" data-mini="true"><br>  
 
-
-
-                <div class="time2" content="ui-content">
-                    <label for="time2">Time Preference</label></div>
-                <div class="time2-o">
-                    <select name="time2" id="time2" data-inline="true" data-mini="true">
-                        <option value="30">30 mins</option>
-                        <option value="15">15 mins</option>
-                        <option value="45">45 mins</option>
-                        <option value="1">1 hour</option>
-                        <option value="1.15"> > 1 hour</option>
-
-                    </select>
-                </div><br><br>
-            <label for="ingredient">Ingredients:</label>
-            <input type="textarea" name="ingredient" id="ingredient"><br><br>
-
-
+          <div class="search">
+            <form action="javascript:advancedSearch();">
+              <div class="time2" content="ui-content">
+                <label for="time2">Time Preference</label>
+              </div>
+              <div class="time2-o">
+                <select name="time2" id="time-selector2" data-inline="true" data-mini="true">
+                  <option value="30">30 mins</option>
+                  <option value="15">15 mins</option>
+                  <option value="45">45 mins</option>
+                  <option value="60">1 hour</option>
+                  <option value="61"> > 1 hour</option>
+                </select>
+              </div><br /></br />
                 
-
-            <div class="search">
-              
-              <form action="javascript:advancedSearch();">
-                <input type="search" name="advancedSearch" id="advanced-search" placeholder="search" style="text-align: center" />
-                <input type="submit" data-inline="true" value="Submit" data-mini="true">
-              </form>
-            </div>
-
-        <!-- </form> -->
-            </div>
+              <label for="ingredient">Ingredients</label>
+              <input type="textarea" name="ingredients-search" id="ingredients-search"><br><br>
+              <label for="food-item-name">Food Item Name</label>
+              <input type="search" name="advancedSearch" id="advanced-search" placeholder="search" style="text-align: center" />
+              <input type="submit" data-inline="true" value="Submit" data-mini="true">
+            </form>
+          </div>
+        
+        </div>
 
 
     </div>
