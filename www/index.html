@@ -3,7 +3,7 @@
 <html>
 <head>
 
-    <meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1" >
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" >
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -17,6 +17,7 @@
 
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/crunchtime.js"></script>
+    <!--<script type="text/javascript" src="js/register.js"></script>-->
     <script src="cordova.js"></script>
     <script>
 
@@ -26,7 +27,8 @@
         
         function onDeviceReady() {
           navigator.geolocation.getCurrentPosition(onSuccess, onError);
-        }
+
+             }
 
         db = window.sqlitePlugin.openDatabase({name: 'mydb7.db', location: 'default'});
         
@@ -61,7 +63,12 @@
 
       function populateDB() {
         db.transaction(function(tx) {
-          tx.executeSql('DROP TABLE IF EXISTS FoodItem');
+            // Create User Table
+            tx.executeSql('DROP TABLE IF EXISTS User');
+            tx.executeSql('CREATE TABLE IF NOT EXISTS User (name, email, password)');
+            tx.executeSql('INSERT INTO User VALUES (?,?,?)', ['Chinki', 'xyz@gmail.com', 'comp422']);
+
+             tx.executeSql('DROP TABLE IF EXISTS FoodItem');
           tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (name, minutes, store, ingredients, link, latitude, longitude)');
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
             ['Burrito Bowl', 15, 'Chipotle', 'Salsa Pico de Gallo pinto beans rotisserie chicken tortillas cilantro white rice Monterey jack cheese guacamole','../www/img/burritoBowl.jpg', 42.002776, -87.660919]);
@@ -85,6 +92,28 @@
                     ['BBQ Chicken Pizza', 15, 'Blaze', 'Grilled chicken mozzarella red onion banana peppers gorgonzola bbq sauce drizzle','../www/img/pizza.jpg', 42.001662, -87.660960]);
             tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
                     ['Green Stripe Pizza', 15, 'Blaze', 'Pesto drizzle over grilled chicken roasted red peppers chopped garlic mozzarella arugula','../www/img/pizza.jpg', 42.001662, -87.660960]);
+
+            //Create Favorites Table
+            tx.executeSql('DROP TABLE IF EXISTS Favorites');
+           tx.executeSql('CREATE TABLE IF NOT EXISTS Favorites (user_id, fooditem_id )');
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,1]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,2]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,3]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,6]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,4]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,5]);
+
+
+            //Create recently browsed table
+            tx.executeSql('DROP TABLE IF EXISTS Browsed');
+            tx.executeSql('CREATE TABLE IF NOT EXISTS Browsed (user_id, FoodItem_id )');
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,3]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,2]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,1]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,5]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,6]);
+            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,4])
+
         }, function(error) {
           alert('Transaction ERROR: ' + error.message);
         }, function() {
@@ -144,6 +173,8 @@
         tx.executeSql("SELECT * FROM FoodItem where (name like '%"+ foodItemName + "%')" + " AND (ingredients like '%" + ingredients + "%')" + " AND (minutes <= " + desiredTime + " )", [], querySuccess, errorCB);
         $.mobile.changePage("#homePage");
       }
+      
+
 
       $(document).ready(function(){
         $("#time-selector").change(function() {
@@ -177,7 +208,7 @@
             <h1>CrunchTime</h1>
                  <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
                     <ul class= "one nav-menu" data-role="listview" data-inset="true" data-transition="slidedown">
-                        <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop">Login</a></li>
+                        <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop" >Login</a></li>
                         <li data-icon="false"><a href="#signUpPage" data-rel="popup" data-position-to="window" data-transition="pop">Register</a></li>
                         <li data-icon="false"><a href="#myPage">My Page</a></li>
                         <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
@@ -232,35 +263,33 @@
             </div>
          </div>
 <!--Login Popup-->
-        <div data-role="popup"  id="loginPage" class="ui-content">
+        <div data-role="popup"  id="loginPage">
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
             <form id ="login" method="post" action="#myPage">
-                <h3>Login/ <a href="#signUpPage">Sign Up</a></h3>
-                <label for="usrnm" class="ui-hidden-accessible">Username:</label>
-                <input type="text" name="user" id="usrnm" placeholder="Username" data-mini="true">
+                <h3>Login</h3>
+                <label for="username" class="ui-hidden-accessible">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Username" value="" data-mini="true">
                 <label for="pswd" class="ui-hidden-accessible">Password:</label>
-                <input type="password" name="pswd" id="pswd" placeholder="Password" data-mini="true">
-                <label for="log">Keep me logged in</label>
-                <input type="checkbox" name="login" id="log" value="1" data-mini="true"><br>
+                <input type="password" name="pswd" id="pswd" placeholder="Password" value="" data-mini="true">
+                <!--<label for="log">Keep me logged in</label>-->
+                <!--<input type="checkbox" name="login" id="log" value="1" data-mini="true"><br>-->
                 <input type="submit" data-inline="true" value="Log in" data-mini="true">
             </form>
         </div>
 
 
-<!--sign up popup-->
         <div data-role="popup" id="signUpPage">
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
             <form id = "signUp" method="post" action="#myPage">
                 <h3>Register</h3>
                 <label for="firstname" class="ui-hidden-accessible">Name </label>
-                <input type="text" name="firstname" id="firstname" placeholder="Name" data-mini="true">
+                <input type="text" name="firstname" id="firstname" placeholder="Name" value="" data-mini="true">
                 <label for="email" class="ui-hidden-accessible">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Email" data-mini="true">
-                <label for=pwd1 class="ui-hidden-accessible">Password: </label>
-                <input type="text" name="pwd1" id="pwd1"placeholder="Password" data-mini="true">
-                <label for="pwd2" class="ui-hidden-accessible">Confirm Password</label>
-                <input type="text" name="pwd2" id="pwd2"  placeholder="Confirm Password" data-mini="true"><br>
-                <input type="submit" data-inline="true" value="SignUp" data-mini="true">
+                <input type="text" name="email" id="email" placeholder="Email" value="" data-mini="true">
+                <label for="pwd" class="ui-hidden-accessible">Password: </label>
+                <input type="text" name="pwd" id="pwd"placeholder="Password" value="" data-mini="true">
+                <a target="_blank" href="javascript:addUser()" style="text-decoration: none"><button>Register</button></a>
+                <!--<input type="submit" data-inline="true" value="SignUp" data-mini="true">-->
 
             </form>
         </div>
@@ -416,7 +445,7 @@
             <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
             <ul class= "one nav-menu" data-role="listview" data-inset="true">
                 <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop">Login</a></li>
-                <li data-icon="false"><a href="#signUpPage" data-rel="popup" data-position-to="window" data-transition="pop">Register</a></li>
+                <li data-icon="false"><a href="#signUpPage">Register</a></li>
                 <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
             </ul>
         </div>
