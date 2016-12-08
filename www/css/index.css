@@ -85,8 +85,8 @@ body{
 
 }
 #homePage, #aboutUsPage, #loginPage , #signUpPage, #myPage, #searchPage, #searchResultPage{
-    background-color: #f9f9f9;
-    /*background-color: #ffffff;*/
+    /*background-color: #f9f9f9;*/
+    background-color: #ffffff;
 }
 
 #header, #header1, #header2, #header3,#header4{
@@ -146,18 +146,18 @@ padding-right: 10px;
 }
 
 
-.ui-block-a{
-    width:48%;
-    padding: 3px;
-    border: black 1px solid;
+/*.ui-block-a{*/
+    /*width:48%;*/
+    /*padding: 3px;*/
+    /*border: black 1px solid;*/
 
-}
+/*}*/
 
-.ui-block-b{
-    width:48%;
-    padding: 3px;
-    border: black 1px solid;
-}
+/*.ui-block-b{*/
+    /*width:48%;*/
+    /*padding: 3px;*/
+    /*border: black 1px solid;*/
+/*}*/
 
 
 .time2, .time2-o{
@@ -197,10 +197,10 @@ h3{
     /*padding-right: 10px;*/
 /*}*/
 
-#loginPage-popup{
+/*#loginPage-popup{*/
 
-    z-index: 100;
-}
+    /*z-index: 100;*/
+/*}*/
 
 /*#signUpPage{*/
     /*padding: 20px;*/

@@ -6,6 +6,8 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" >
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/1.4.5/jquery.mobile-1.4.5.min.css" />
+
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 
 
@@ -17,7 +19,7 @@
 
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/crunchtime.js"></script>
-    <!--<script type="text/javascript" src="js/register.js"></script>-->
+
     <script src="cordova.js"></script>
     <script>
 
@@ -79,7 +81,7 @@
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
             ['Salad Bowl', 40, 'You', 'romaine spinach brussel sprouts sweet potato cucumber carrots avocado onions tomatoes olive oil', '../www/img/salad.jpg', 41.999934, -87.660238]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
-            ['Fries', 20, 'Bop\'N Grill', 'potatoes vegetable oil', '../www/img/frenchfries.png', 42.002830, -87.660926]);
+            ['Fries', 20, 'Bop\'N Grill', 'potatoes vegetable oil', '../www/img/fries.jpg', 42.002830, -87.660926]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
             ['Sandwich', 13, 'Subway', 'Artisan grilled chicken filet artisan roll tomato slice lettuce vinaigrette sauce herb seasoning','../www/img/sandwich.jpg', 41.999757, -87.660311]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?)',
@@ -142,7 +144,8 @@
           
           foodItemText += '<a href="#"><img src="'
                         + results.rows.item(i).link
-                        + '" class="ui-li-thumb"></a><span><p>' 
+                        + '" class="ui-li-thumb"></a><span><p>'
+                        + '<button class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" data-mini="true">Heart Icon</button>'
                         + results.rows.item(i).name 
                         + '<br>by <a href="#popupMap" data-rel="popup">' 
                         + results.rows.item(i).store + '</a></p></span>';
@@ -347,6 +350,7 @@
         <div class="ui-grid-x">
 
             <div class = "ui-block-a">
+                <a href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext">Heart Icon</a>
                 <a href="#">
                     <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb"></a><br>
 
