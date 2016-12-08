@@ -120,12 +120,22 @@
         document.getElementById("food-item-list").innerHTML = foodItemIndexText;
       }
 
-      function goSearch() {   
+      function goSearch() { 
         db.transaction(searchQueryDB, errorCB);
       }
 
       function searchQueryDB(tx) {
         tx.executeSql("SELECT * FROM FoodItem where name like ('%"+ document.getElementById("search-basic").value + "%')", [], querySuccess, errorCB);
+      }
+
+      function advancedSearch() {
+        db.transaction(advancedSearchQueryDB, errorCB);
+      }
+
+      function advancedSearchQueryDB(tx) {
+        tx.executeSql("SELECT * FROM FoodItem where name like ('%"+ document.getElementById("advanced-search").value + "%')", [], querySuccess, errorCB);
+        // alert($.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ));
+        $.mobile.changePage("#homePage");
       }
 
       $(document).ready(function(){
@@ -315,7 +325,6 @@
             </ul>
         </div><br><br>
         <div data-role="main" content="ui-content">
-            <form id="searchForm" method="post" action="#searchResultPage">
 
             <label><input type="radio" name="radio-choice-0" id="radio-choice-0a" data-mini="true">Vegan </label>
             <label for="radio-choice-0b">Vegetarian</label>
@@ -339,9 +348,17 @@
             <input type="textarea" name="ingredient" id="ingredient"><br><br>
 
 
-                <a href="#searchResultPage"><input type="submit" data-inline="true" value="Submit" data-mini="true"></a>
+                
 
-        </form>
+            <div class="search">
+              
+              <form action="javascript:advancedSearch();">
+                <input type="search" name="advancedSearch" id="advanced-search" placeholder="search" style="text-align: center" />
+                <input type="submit" data-inline="true" value="Submit" data-mini="true">
+              </form>
+            </div>
+
+        <!-- </form> -->
             </div>
 
 
