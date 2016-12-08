@@ -181,7 +181,42 @@
           filterFoodItems();
       });
 
-      function filterFoodItems(){
+          function addUser()     {
+          var name = document.getElementById("firstname").value;
+          var email = document.getElementById("email").value;
+          var pwd = document.getElementById("pwd").value;
+
+
+          if(name == "")
+          {
+              alert("Please enter your name");
+              return;
+          }
+
+          if(email == "")
+          {
+              alert("Please enter your email");
+              return;
+          }
+          if(pwd == "")
+          {
+              alert("Please enter your password");
+              return;
+          }
+
+
+
+          db.transaction(function(tx) {
+              tx.executeSql("INSERT INTO User VALUES (?,?, ?)", [name, email, pwd], function(tx,res){
+                  alert("User Registered");
+              });
+          }, function(err){
+              alert("An error occured while registering the user");
+          });
+      }
+
+
+              function filterFoodItems(){
         db.transaction(filterQueryDB, errorCB);
       }
 
