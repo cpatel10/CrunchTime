@@ -34,6 +34,10 @@
         db.transaction(queryDB, errorCB);
       });
 
+      function reloadListing(){
+        db.transaction(queryDB, errorCB);
+      }
+
       function onSuccess(position) {
         var element = document.getElementById('geolocation');
         element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
@@ -177,6 +181,7 @@
                         <li data-icon="false"><a href="#signUpPage" data-rel="popup" data-position-to="window" data-transition="pop">Register</a></li>
                         <li data-icon="false"><a href="#myPage">My Page</a></li>
                         <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
+                        <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
                     </ul>
         </div>
 
@@ -270,7 +275,7 @@
             <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
             <ul class= "one nav-menu" data-role="listview" data-inset="true">
                 <li data-icon="false"><a href="#homePage">Logout</a></li>
-                <li data-icon="false"><a href="#homePage">Home</a></li>
+                <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
                 <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
             </ul>
             </div>
@@ -325,6 +330,7 @@
                 <li data-icon="false"><a href="#loginPage">Login</a></li>
                 <li data-icon="false"><a href="#signUpPage">Register</a></li>
                 <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
+                <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
             </ul>
         </div><br><br>
         <div data-role="main" content="ui-content">
@@ -368,7 +374,7 @@
             <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
             <ul class= "one nav-menu" data-role="listview" data-inset="true">
                 <li data-icon="false"><a href="#homePage">Logout</a></li>
-                <li data-icon="false"><a href="#homePage">Home</a></li>
+                <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
                 <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
             </ul>
         </div>
@@ -411,7 +417,7 @@
             <ul class= "one nav-menu" data-role="listview" data-inset="true">
                 <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop">Login</a></li>
                 <li data-icon="false"><a href="#signUpPage" data-rel="popup" data-position-to="window" data-transition="pop">Register</a></li>
-                <li data-icon="false"><a href="#homePage">Home</a></li>
+                <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
             </ul>
         </div>
         <div data-role="main" content="ui-content">
