@@ -69,27 +69,27 @@
              tx.executeSql('DROP TABLE IF EXISTS FoodItem');
           tx.executeSql('CREATE TABLE IF NOT EXISTS FoodItem (fooditem_id, name, minutes, store, ingredients, link, latitude, longitude)');
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-            [1,'Burrito Bowl', 15, 'Chipotle', 'Salsa Pico de Gallo pinto beans rotisserie chicken tortillas cilantro white rice Monterey jack cheese guacamole','../www/img/burritoBowl.jpg', 42.002776, -87.660919]);
+            [1, 'Burrito Bowl', 15, 'Chipotle', 'Salsa Pico de Gallo pinto beans rotisserie chicken tortillas cilantro white rice Monterey jack cheese guacamole','../www/img/burritoBowl.jpg', 42.002776, -87.660919]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-            [2,'Crispy Corn Tacos', 20, 'Taco Bell', 'Crispy taco shells white cheddar jack cheese corn salsa lettuce boneless chicken breasts taco seasoning paprika', '../www/img/taco.jpg', 42.000100, -87.660321]);
+            [2, 'Crispy Corn Tacos', 20, 'Taco Bell', 'Crispy taco shells white cheddar jack cheese corn salsa lettuce boneless chicken breasts taco seasoning paprika', '../www/img/taco.jpg', 42.000100, -87.660321]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-            [3,'Quarter Pounder', 25, 'McDonalds', 'Beef patty sesame seed bun American cheese ketchup pickles slices onions mustard', '../www/img/burger.jpg', 41.995748, -87.659353]);
+            [3, 'Quarter Pounder', 25, 'McDonalds', 'Beef patty sesame seed bun American cheese ketchup pickles slices onions mustard', '../www/img/burger.jpg', 41.995748, -87.659353]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-            [4,'Salad Bowl', 40, 'You', 'romaine spinach brussel sprouts sweet potato cucumber carrots avocado onions tomatoes olive oil', '../www/img/salad.jpg', 41.999934, -87.660238]);
+            [4, 'Salad Bowl', 40, 'You', 'romaine spinach brussel sprouts sweet potato cucumber carrots avocado onions tomatoes olive oil', '../www/img/salad.jpg', 41.999934, -87.660238]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-            [5,'Fries', 20, 'Bop\'N Grill', 'potatoes vegetable oil', '../www/img/fries.jpg', 42.002830, -87.660926]);
+            [5, 'Fries', 20, 'Bop\'N Grill', 'potatoes vegetable oil', '../www/img/fries.jpg', 42.002830, -87.660926]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-            [6,'Sandwich', 13, 'Subway', 'Artisan grilled chicken filet artisan roll tomato slice lettuce vinaigrette sauce herb seasoning','../www/img/sandwich.jpg', 41.999757, -87.660311]);
+            [6, 'Sandwich', 13, 'Subway', 'Artisan grilled chicken filet artisan roll tomato slice lettuce vinaigrette sauce herb seasoning','../www/img/sandwich.jpg', 41.999757, -87.660311]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-            [7,'Chicken Wrap', 35, 'You', 'chicken breast olive oil garlic sour cream dressing cherry tomatoes romaine lettuce croutons tortillas', '../www/img/wrap.jpg', 41.999934, -87.660238]);
+            [7, 'Chicken Wrap', 35, 'You', 'chicken breast olive oil garlic sour cream dressing cherry tomatoes romaine lettuce croutons tortillas', '../www/img/wrap.jpg', 41.999934, -87.660238]);
           tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-            [8,'Pizza', 15, 'Blaze', 'White cream sauce with mozzarella Applewood bacon chopped garlic oregano arugula','../www/img/pizza.jpg', 42.001662, -87.660960]);
+            [8, 'Pizza', 15, 'Blaze', 'White cream sauce with mozzarella Applewood bacon chopped garlic oregano arugula','../www/img/pizza.jpg', 42.001662, -87.660960]);
             tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-                    [9,'Pie Pizza', 15, 'Blaze', 'Mozzarella parmesan red sauce','../www/img/pizza.jpg', 42.001662, -87.660960]);
+                    [9, 'Pie Pizza', 15, 'Blaze', 'Mozzarella parmesan red sauce','../www/img/pizza.jpg', 42.001662, -87.660960]);
             tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-                    [10,'BBQ Chicken Pizza', 15, 'Blaze', 'Grilled chicken mozzarella red onion banana peppers gorgonzola bbq sauce drizzle','../www/img/pizza.jpg', 42.001662, -87.660960]);
+                    [10, 'BBQ Chicken Pizza', 15, 'Blaze', 'Grilled chicken mozzarella red onion banana peppers gorgonzola bbq sauce drizzle','../www/img/pizza.jpg', 42.001662, -87.660960]);
             tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
-                    [11,'Green Stripe Pizza', 15, 'Blaze', 'Pesto drizzle over grilled chicken roasted red peppers chopped garlic mozzarella arugula','../www/img/pizza.jpg', 42.001662, -87.660960]);
+                    [11, 'Green Stripe Pizza', 15, 'Blaze', 'Pesto drizzle over grilled chicken roasted red peppers chopped garlic mozzarella arugula','../www/img/pizza.jpg', 42.001662, -87.660960]);
 
             //Create Favorites Table
             tx.executeSql('DROP TABLE IF EXISTS Favorites');
@@ -127,6 +127,7 @@
 
       var apiCallResults = [];
       var foodItemArray;
+      var foodItemIndexText;
 
       function querySuccess(tx, results) {
 
@@ -134,14 +135,14 @@
         var fLen = apiCallResults.length;
         if (fLen > 0) {  
           for (i = 0; i < fLen; i++) {
-            foodItemArray.push(['http://placehold.it/150x150', apiCallResults[i]["title"], apiCallResults[i]["ingredients"], 'You']);
+            foodItemArray.push(['http://placehold.it/150x150', apiCallResults[i]["title"], apiCallResults[i]["ingredients"], 'You', 0]);
           }   
         }
 
         var rLen = results.rows.length;
         if (rLen > 0) {
           for (i = 0; i < rLen; i++) {
-            foodItemArray.push([results.rows.item(i).link, results.rows.item(i).name, results.rows.item(i).ingredients, results.rows.item(i).store]);
+            foodItemArray.push([results.rows.item(i).link, results.rows.item(i).name, results.rows.item(i).ingredients, results.rows.item(i).store, results.rows.item(i).fooditem_id]);
           }  
         }
 
@@ -149,7 +150,7 @@
           foodItemArray.sort(function(a, b){return 0.5 - Math.random()});
         }
 
-        var foodItemIndexText = '';
+        foodItemIndexText = '';
 
         var len = foodItemArray.length;
         for (var i = 0; i < len; i++) {
@@ -161,7 +162,15 @@
           
           foodItemText += '<div class="ui-block-a"><a href="#"><img src="'
                         + foodItemArray[i][0]
-                        + '" class="ui-li-thumb"></a></div><div class="ui-block-a">'
+                        + '" class="ui-li-thumb"></a></div><div class="ui-block-a"><button class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" onclick="addToFav('
+                        + foodItemArray[i][4]
+                        + ', \''
+                        + foodItemArray[i][1]
+                        + '\', \''
+                        + foodItemArray[i][0]
+                        + '\', \''
+                        + foodItemArray[i][3]
+                        + '\')" data-mini="true">Heart Icon</button></div><div class="ui-block-a">'
                         + foodItemArray[i][1] 
                         + '</div><div class="ui-block-a">by <a href="#popupMap" data-rel="popup">' 
                         + foodItemArray[i][3] + '</a></div>';
@@ -174,6 +183,51 @@
         apiCallResults = [];
       }
 
+      function addToFav(foodItemID, foodItemName, foodItemLink, foodItemStore) {
+
+        var foodItemCount;
+        getFoodItemCount( function( count ) {
+            foodItemCount = count;
+            // do what you want with the count
+            // alert( 'The number of rows in food item is: '+ count );
+        });
+
+        var insertedID = foodItemCount + 1;
+        db.transaction(function(tx) {
+          tx.executeSql('INSERT INTO FoodItem VALUES (?,?,?,?,?,?,?,?)',
+            [insertedID, foodItemName, 20, foodItemStore, '', foodItemLink, 42.000100, -87.660321]);
+        });
+        
+        db.transaction(function(tx) {
+          tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1, insertedID]);
+        });
+
+        alert('Added to Favorites');
+        
+      }
+
+      function getFoodItemCount( callback ){    
+        var count = 0;  
+        db.transaction(function(tx) {   
+        tx.executeSql('SELECT * FROM FoodItem', [], function(tx, results) {
+              // this function is called when the executeSql is ended
+              count = results.rows.length;
+              callback( count );   // <-- call the callback when is done   
+            });
+        });
+      }
+
+      function getFavCount( callback ){    
+        var count = 0;  
+        db.transaction(function(tx) {   
+        tx.executeSql('SELECT * FROM Favorites WHERE user_id=1', [], function(tx, results) {
+              // this function is called when the executeSql is ended
+              count = results.rows.length;
+              callback( count );   // <-- call the callback when is done   
+            });
+        });
+      }
+
       function goMyPage() { 
         db.transaction(myPageSearchQueryDB, errorCB);
       }
@@ -181,11 +235,12 @@
       function myPageSearchQueryDB(tx) {
         tx.executeSql("SELECT * FROM FoodItem INNER JOIN Favorites ON FoodItem.fooditem_id = Favorites.fooditem_id WHERE Favorites.user_id = 1", [], favoritesQuerySuccess, errorCB);
 
-        tx.executeSql("SELECT * FROM FoodItem INNER JOIN Browsed ON FoodItem.fooditem_id = Browsed.fooditem_id WHERE Browsed.user_id = 1", [], browsedQuerySuccess, errorCB);
+        tx.executeSql("SELECT DISTINCT * FROM FoodItem INNER JOIN Browsed ON FoodItem.fooditem_id = Browsed.fooditem_id WHERE Browsed.user_id = 1", [], browsedQuerySuccess, errorCB);
       }
 
       function favoritesQuerySuccess(tx, results) {
-        var foodItemIndexText = '';
+      
+        foodItemIndexText = '';
         var len = results.rows.length;
         for (var i = 0; i < len; i++) {
           if (i%2 == 0) {
@@ -208,7 +263,7 @@
       }
 
       function browsedQuerySuccess(tx, results) {
-        var foodItemIndexText = '';
+        foodItemIndexText = '';
         var len = results.rows.length;
         for (var i = 0; i < len; i++) {
           if (i%2 == 0) {
