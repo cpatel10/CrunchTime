@@ -19,6 +19,7 @@
     <script>
 
       var db = null;
+      var user_id = 1;
 
       document.addEventListener('deviceready', function() {
         
@@ -97,19 +98,17 @@
             tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,2]);
             tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,3]);
             tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,6]);
-            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,4]);
-            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,5]);
 
 
             //Create recently browsed table
             tx.executeSql('DROP TABLE IF EXISTS Browsed');
-            tx.executeSql('CREATE TABLE IF NOT EXISTS Browsed (user_id, FoodItem_id )');
-            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,3]);
-            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,2]);
-            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,1]);
-            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,5]);
-            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,6]);
-            tx.executeSql('INSERT INTO Favorites VALUES (?,?)', [1,4])
+            tx.executeSql('CREATE TABLE IF NOT EXISTS Browsed (user_id, fooditem_id )');
+            tx.executeSql('INSERT INTO Browsed VALUES (?,?)', [1,4]);
+            tx.executeSql('INSERT INTO Browsed VALUES (?,?)', [1,2]);
+            tx.executeSql('INSERT INTO Browsed VALUES (?,?)', [1,1]);
+            tx.executeSql('INSERT INTO Browsed VALUES (?,?)', [1,7]);
+            tx.executeSql('INSERT INTO Browsed VALUES (?,?)', [1,6]);
+            tx.executeSql('INSERT INTO Browsed VALUES (?,?)', [1,10])
 
         }, function(error) {
           alert('Transaction ERROR: ' + error.message);
@@ -180,8 +179,9 @@
       }
 
       function myPageSearchQueryDB(tx) {
-        tx.executeSql("SELECT * FROM FoodItem where name like ('%chicken%')", [], favoritesQuerySuccess, errorCB);
-        tx.executeSql("SELECT * FROM FoodItem where name like ('%pizza%')", [], browsedQuerySuccess, errorCB);
+        tx.executeSql("SELECT * FROM FoodItem INNER JOIN Favorites ON FoodItem.fooditem_id = Favorites.fooditem_id WHERE Favorites.user_id = 1", [], favoritesQuerySuccess, errorCB);
+
+        tx.executeSql("SELECT * FROM FoodItem INNER JOIN Browsed ON FoodItem.fooditem_id = Browsed.fooditem_id WHERE Browsed.user_id = 1", [], browsedQuerySuccess, errorCB);
       }
 
       function favoritesQuerySuccess(tx, results) {
@@ -437,13 +437,13 @@
           <div class="ui-grid-solo">
             <div class="ui-block-a">
               <h3>Favorites</h3>
-              <div id="favorites-list">blah</div> 
+              <div id="favorites-list"></div> 
             </div>
           </div>
           <div class="ui-grid-solo">
             <div class="ui-block-a">
               <h3>Previously browsed</h3>
-              <div id="browsed-list">blah</div> 
+              <div id="browsed-list"></div> 
             </div>
           </div>  
         </div>
