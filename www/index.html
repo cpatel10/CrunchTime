@@ -6,9 +6,9 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" >
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
 
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!--<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
 
 
     <!-- temporarily moved to head whilst we develop app...-->
@@ -19,7 +19,7 @@
 
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/crunchtime.js"></script>
-
+    <script type="text/javascript" src="js/jquery.mobile.update.js"></script>
     <script src="cordova.js"></script>
     <script>
 
@@ -298,7 +298,11 @@
                     <ul class= "one nav-menu" data-role="listview" data-inset="true" data-transition="slidedown">
                         <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop" >Login</a></li>
                         <li data-icon="false"><a href="#signUpPage" data-rel="popup" data-position-to="window" data-transition="pop">Register</a></li>
+<<<<<<< HEAD
                         <li data-icon="false"><a href="#myPage" onclick="goMyPage()">My Page</a></li>
+=======
+                        <!--<li data-icon="false"><a href="#myPage">My Page</a></li>-->
+>>>>>>> e040e5faaa708cbd8be6a13466beef1bc2eae9b9
                         <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
                         <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
                     </ul>
@@ -311,7 +315,7 @@
         <div id="time1" content="ui-content">
                 <label for="time1">Have these items in </label></div>
                 <div id="time1-o">
-                <select name="time" id="time-selector" data-inline="true" data-mini="true">
+                <select name="time" id="time-selector" data-inline="true" data-mini="true" >
                     <option value="30">30 mins</option>
                     <option value="15">15 mins</option>
                     <option value="45">45 mins</option>
@@ -359,9 +363,10 @@
                 <input type="text" name="username" id="username" placeholder="Username" value="" data-mini="true">
                 <label for="pswd" class="ui-hidden-accessible">Password:</label>
                 <input type="password" name="pswd" id="pswd" placeholder="Password" value="" data-mini="true">
+                <button id="loginButton">Login</button>
                 <!--<label for="log">Keep me logged in</label>-->
                 <!--<input type="checkbox" name="login" id="log" value="1" data-mini="true"><br>-->
-                <input type="submit" data-inline="true" value="Log in" data-mini="true">
+                <!--<input type="submit" data-inline="true" value="Log in" data-mini="true">-->
             </form>
         </div>
 
@@ -376,7 +381,8 @@
                 <input type="text" name="email" id="email" placeholder="Email" value="" data-mini="true">
                 <label for="pwd" class="ui-hidden-accessible">Password: </label>
                 <input type="text" name="pwd" id="pwd"placeholder="Password" value="" data-mini="true">
-                <a target="_blank" href="javascript:addUser()" style="text-decoration: none"><button>Register</button></a>
+                <button style="width: 150px; margin:0 auto; margin-bottom: 10px" onclick="addUser();">Register</button>
+                <!--<a target="_blank" href="javascript:" style="text-decoration: none"><button style="width: 150px; margin:0 auto; margin-bottom: 10px">Register</button></a>-->
                 <!--<input type="submit" data-inline="true" value="SignUp" data-mini="true">-->
 
             </form>
@@ -396,6 +402,7 @@
                 <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
             </ul>
             </div>
+<<<<<<< HEAD
         
         
         <div data-role="main" content="ui-content">
@@ -403,6 +410,39 @@
             <div class="ui-block-a">
             <h3>Favorites</h3>
             <div id="favorites-list">blah</div> 
+=======
+        <h3>Favorites</h3>
+        <div class="ui-grid-x">
+
+            <div class = "ui-block-a">
+
+                <a href="#">
+                    <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb"></a><br>
+
+                <span>Burrito Bowl<br> by <a href="#" >Chipotle</a></p></span>
+
+            </div>
+            <div class="ui-block-b"><a href="#">
+                <img src="../www/img/taco.jpg" class="ui-li-thumb"></a></br>
+
+                <span><p>Crispy Corn Tacos<br>by <a href="#">Taco Bell</a></p></span>
+
+            </div>
+
+        </div>
+
+
+        <h3>Previously browsed</h3>
+
+            <div class="ui-grid-x">
+
+
+            <div class ="ui-block-a"><a href="#">
+                <img src="../www/img/salad.jpg" class="ui-li-thumb"></a><br>
+
+                <span><p>Salad Bowl<br> Prepared by <a href="#">You</a></p></span>
+
+>>>>>>> e040e5faaa708cbd8be6a13466beef1bc2eae9b9
             </div>
           </div>
           <div class="ui-grid-solo">
@@ -436,7 +476,7 @@
           <div class="search">
             <form action="javascript:advancedSearch();">
               <div class="time2" content="ui-content">
-                <label for="time2">Time Preference</label>
+                <label for="time-selector2">Time Preference</label>
               </div>
               <div class="time2-o">
                 <select name="time2" id="time-selector2" data-inline="true" data-mini="true">
@@ -448,9 +488,9 @@
                 </select>
               </div><br /></br />
                 
-              <label for="ingredient">Ingredients</label>
+              <label for="ingredients-search">Ingredients</label>
               <input type="textarea" name="ingredients-search" id="ingredients-search"><br><br>
-              <label for="food-item-name">Food Item Name</label>
+              <label for="advanced-search">Food Item Name</label>
               <input type="search" name="advancedSearch" id="advanced-search" placeholder="search" style="text-align: center" />
               <input type="submit" data-inline="true" value="Submit" data-mini="true">
             </form>

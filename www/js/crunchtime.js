@@ -20,6 +20,26 @@ $(document).mouseup(function (e)
         container.hide(350);
     }
 });
+$("#loginButton").click(function() {
+    var email = $("#email").val();
+    var password = $("#pswd").val();
+
+    if (userName.length === 0 || password.length === 0) {
+        alert("Both fields are required.");
+    } else {
+        myDB.transaction(function(transaction) {
+            transaction.executeSql('SELECT * FROM User WHERE email = "' + email + '" and password = "' + password + '"', [],
+                function(transaction, results) {
+                    alert("Successful");
+                },
+                function(transaction, error) {
+                    alert("Login Error");
+                }
+            );
+
+        });
+    }
+});
 
 
 
