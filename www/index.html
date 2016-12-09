@@ -14,6 +14,7 @@
 
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/crunchtime.js"></script>
+
     
     <script src="cordova.js"></script>
     <script>
@@ -135,7 +136,7 @@
         var fLen = apiCallResults.length;
         if (fLen > 0) {  
           for (i = 0; i < fLen; i++) {
-            foodItemArray.push(['http://placehold.it/150x150', apiCallResults[i]["title"], apiCallResults[i]["ingredients"], 'You', 0]);
+            foodItemArray.push(['http://placehold.it/300x150', apiCallResults[i]["title"], apiCallResults[i]["ingredients"], 'You', 0]);
           }   
         }
 
@@ -159,21 +160,37 @@
           } else {
             var foodItemText = '<div class="ui-block-b">';
           }
-          
-          foodItemText += '<div class="ui-block-a"><a href="#"><img src="'
-                        + foodItemArray[i][0]
-                        + '" class="ui-li-thumb"></a></div><div class="ui-block-a"><button class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" onclick="addToFav('
-                        + foodItemArray[i][4]
-                        + ', \''
-                        + foodItemArray[i][1]
-                        + '\', \''
-                        + foodItemArray[i][0]
-                        + '\', \''
-                        + foodItemArray[i][3]
-                        + '\')" data-mini="true">Heart Icon</button></div><div class="ui-block-a">'
-                        + foodItemArray[i][1] 
-                        + '</div><div class="ui-block-a">by <a href="#popupMap" data-rel="popup">' 
-                        + foodItemArray[i][3] + '</a></div>';
+
+            foodItemText += '<a href="#"><img src="'
+                    + foodItemArray[i][0]
+                    + '" class="ui-li-thumb"></a><span><p><button class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" onclick="addToFav('
+                    + foodItemArray[i][4]
+                    + ', \''
+                    + foodItemArray[i][1]
+                    + '\', \''
+                    + foodItemArray[i][0]
+                    + '\', \''
+                    + foodItemArray[i][3]
+                    + '\')" data-mini="true">Heart Icon</button>'
+                    + foodItemArray[i][1]
+                    + '<br>by <a href="#popupMap" data-rel="popup">'
+                    + foodItemArray[i][3] + '</a></p></span>';
+
+
+//            foodItemText += '<div class="ui-block-a"><a href="#"><img src="'
+//                        + foodItemArray[i][0]
+//                        + '" class="ui-li-thumb"></a></div><div class="ui-block-a"><button class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" onclick="addToFav('
+//                        + foodItemArray[i][4]
+//                        + ', \''
+//                        + foodItemArray[i][1]
+//                        + '\', \''
+//                        + foodItemArray[i][0]
+//                        + '\', \''
+//                        + foodItemArray[i][3]
+//                        + '\')" data-mini="true">Heart Icon</button></div><div class="ui-block-a">'
+//                        + foodItemArray[i][1]
+//                        + '</div><div class="ui-block-a">by <a href="#popupMap" data-rel="popup">'
+//                        + foodItemArray[i][3] + '</a></div>';
 
           foodItemText += "</div>";
           foodItemIndexText += foodItemText;
@@ -387,7 +404,7 @@
                         <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop" >Login</a></li>
                         <li data-icon="false"><a href="#signUpPage" data-rel="popup" data-position-to="window" data-transition="pop">Register</a></li>
 
-                        <li data-icon="false"><a href="#myPage" onclick="goMyPage()">My Page</a></li>
+                        <!--<li data-icon="false"><a href="#myPage" onclick="goMyPage()">My Page</a></li>-->
 
                         <!--<li data-icon="false"><a href="#myPage">My Page</a></li>-->
 
@@ -451,10 +468,10 @@
                 <input type="text" name="username" id="username" placeholder="Username" value="" data-mini="true">
                 <label for="pswd" class="ui-hidden-accessible">Password:</label>
                 <input type="password" name="pswd" id="pswd" placeholder="Password" value="" data-mini="true">
-                <button id="loginButton">Login</button>
+                <!--<button id="loginButton">Login</button>-->
                 <!--<label for="log">Keep me logged in</label>-->
                 <!--<input type="checkbox" name="login" id="log" value="1" data-mini="true"><br>-->
-                <!--<input type="submit" data-inline="true" value="Log in" data-mini="true">-->
+                <a href="#myPage" onclick="goMyPage()"><input type="submit" data-inline="true" value="Login" data-mini="true"></a>
             </form>
         </div>
 
@@ -493,13 +510,13 @@
 
         
         <div data-role="main" content="ui-content">
-          <div class="ui-grid-solo">
+          <div class="ui-grid-x">
             <div class="ui-block-a">
               <h3>Favorites</h3>
               <div id="favorites-list"></div> 
             </div>
           </div>
-          <div class="ui-grid-solo">
+          <div class="ui-grid-x">
             <div class="ui-block-a">
               <h3>Previously browsed</h3>
               <div id="browsed-list"></div> 
@@ -609,9 +626,10 @@
         <h1>CrunchTime</h1>
             <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
             <ul class= "one nav-menu" data-role="listview" data-inset="true">
-                <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop">Login</a></li>
-                <li data-icon="false"><a href="#signUpPage">Register</a></li>
+                <!--<li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop">Login</a></li>-->
+                <!--<li data-icon="false"><a href="#signUpPage">Register</a></li>-->
                 <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
+                <!--<li data-icon="false"><a href="#homePage">Logout</a></li>-->
             </ul>
         </div>
         <div data-role="main" content="ui-content">

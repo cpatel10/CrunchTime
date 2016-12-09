@@ -171,6 +171,8 @@ padding-right: 10px;
 
 
 #p1{
+    word-wrap: normal;
+    width:250px;
     padding-left: 20px;
     position: relative;
     text-align: left;
