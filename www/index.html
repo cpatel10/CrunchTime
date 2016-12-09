@@ -244,21 +244,16 @@
         var ingredients = $("#ingredients-search").val();
 
         var output = $.ajax({
-          url: 'http://www.recipepuppy.com/api/?q=' + foodItemName, 
+          url: 'http://www.recipepuppy.com/api/?q=' + foodItemName + '&i=' + ingredients, 
           type: 'GET',
           data: {}, 
           dataType: 'json',
           success: function(data) {
-            // alert(data["results"].length);
-            // alert(data["results"][0]["title"]);
-            // alert(data["results"][0]["ingredients"]);
-            // alert(data["results"][0]["thumbnail"]);
             apiCallResults = data["results"];
           },
-          error: function(err) { alert(err); },
-          // beforeSend: function(xhr) {
-          // xhr.setRequestHeader("X-Mashape-Authorization", "YOUR_API_KEY"); // Enter here your Mashape key
-          // }
+          error: function(err) { 
+            alert(err); 
+          },
         });
         
         tx.executeSql("SELECT * FROM FoodItem where (name like '%"+ foodItemName + "%')" + " AND (ingredients like '%" + ingredients + "%')" + " AND (minutes <= " + desiredTime + " )", [], querySuccess, errorCB);
