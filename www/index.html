@@ -156,8 +156,61 @@
         document.getElementById("food-item-list").innerHTML = foodItemIndexText;
       }
 
-      function goSearch() { 
-        db.transaction(searchQueryDB, errorCB);
+      function goMyPage() { 
+        db.transaction(myPageSearchQueryDB, errorCB);
+      }
+
+      function myPageSearchQueryDB(tx) {
+        tx.executeSql("SELECT * FROM FoodItem where name like ('%chicken%')", [], favoritesQuerySuccess, errorCB);
+        tx.executeSql("SELECT * FROM FoodItem where name like ('%pizza%')", [], browsedQuerySuccess, errorCB);
+      }
+
+      function favoritesQuerySuccess(tx, results) {
+        var foodItemIndexText = '';
+        var len = results.rows.length;
+        for (var i = 0; i < len; i++) {
+          if (i%2 == 0) {
+            var foodItemText = '<div class="ui-block-a">';
+          } else {
+            var foodItemText = '<div class="ui-block-b">';
+          }
+          
+          foodItemText += '<a href="#"><img src="'
+                        + results.rows.item(i).link
+                        + '" class="ui-li-thumb"></a><span><p>'
+                        + '<button class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" data-mini="true">Heart Icon</button>'
+                        + results.rows.item(i).name 
+                        + '<br>by <a href="#popupMap" data-rel="popup">' 
+                        + results.rows.item(i).store + '</a></p></span>';
+          foodItemText += "</div>";
+          foodItemIndexText += foodItemText;
+        }
+        
+        document.getElementById("favorites-list").innerHTML = foodItemIndexText;
+      }
+
+      function browsedQuerySuccess(tx, results) {
+        var foodItemIndexText = '';
+        var len = results.rows.length;
+        for (var i = 0; i < len; i++) {
+          if (i%2 == 0) {
+            var foodItemText = '<div class="ui-block-a">';
+          } else {
+            var foodItemText = '<div class="ui-block-b">';
+          }
+          
+          foodItemText += '<a href="#"><img src="'
+                        + results.rows.item(i).link
+                        + '" class="ui-li-thumb"></a><span><p>'
+                        + '<button class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" data-mini="true">Heart Icon</button>'
+                        + results.rows.item(i).name 
+                        + '<br>by <a href="#popupMap" data-rel="popup">' 
+                        + results.rows.item(i).store + '</a></p></span>';
+          foodItemText += "</div>";
+          foodItemIndexText += foodItemText;
+        }
+        
+        document.getElementById("browsed-list").innerHTML = foodItemIndexText;
       }
 
       function searchQueryDB(tx) {
@@ -184,42 +237,39 @@
           filterFoodItems();
       });
 
-          function addUser()     {
-          var name = document.getElementById("firstname").value;
-          var email = document.getElementById("email").value;
-          var pwd = document.getElementById("pwd").value;
+      function addUser()     {
+        var name = document.getElementById("firstname").value;
+        var email = document.getElementById("email").value;
+        var pwd = document.getElementById("pwd").value;
 
+        if(name == "")
+        {
+            alert("Please enter your name");
+            return;
+        }
 
-          if(name == "")
-          {
-              alert("Please enter your name");
-              return;
-          }
+        if(email == "")
+        {
+            alert("Please enter your email");
+            return;
+        }
+        if(pwd == "")
+        {
+            alert("Please enter your password");
+            return;
+        }
 
-          if(email == "")
-          {
-              alert("Please enter your email");
-              return;
-          }
-          if(pwd == "")
-          {
-              alert("Please enter your password");
-              return;
-          }
-
-
-
-          db.transaction(function(tx) {
-              tx.executeSql("INSERT INTO User VALUES (?,?, ?)", [name, email, pwd], function(tx,res){
-                  alert("User Registered");
-              });
-          }, function(err){
-              alert("An error occured while registering the user");
-          });
+        db.transaction(function(tx) {
+            tx.executeSql("INSERT INTO User VALUES (?,?, ?)", [name, email, pwd], function(tx,res){
+                alert("User Registered");
+            });
+        }, function(err){
+            alert("An error occured while registering the user");
+        });
       }
 
 
-              function filterFoodItems(){
+      function filterFoodItems(){
         db.transaction(filterQueryDB, errorCB);
       }
 
@@ -248,7 +298,7 @@
                     <ul class= "one nav-menu" data-role="listview" data-inset="true" data-transition="slidedown">
                         <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop" >Login</a></li>
                         <li data-icon="false"><a href="#signUpPage" data-rel="popup" data-position-to="window" data-transition="pop">Register</a></li>
-                        <li data-icon="false"><a href="#myPage">My Page</a></li>
+                        <li data-icon="false"><a href="#myPage" onclick="goMyPage()">My Page</a></li>
                         <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
                         <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
                     </ul>
@@ -346,48 +396,24 @@
                 <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
             </ul>
             </div>
-        <h3>Favorites</h3>
-        <div class="ui-grid-x">
-
-            <div class = "ui-block-a">
-                <a href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext">Heart Icon</a>
-                <a href="#">
-                    <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb"></a><br>
-
-                <span>Burrito Bowl<br> by <a href="#" >Chipotle</a></p></span>
-
+        
+        
+        <div data-role="main" content="ui-content">
+          <div class="ui-grid-solo">
+            <div class="ui-block-a">
+            <h3>Favorites</h3>
+            <div id="favorites-list">blah</div> 
             </div>
-            <div class="ui-block-b"><a href="#">
-                <img src="../www/img/taco.jpg" class="ui-li-thumb"></a></br>
-
-                <span><p>Crispy Corn Tacos<br>by <a href="#">Taco Bell</a></p></span>
-
+          </div>
+          <div class="ui-grid-solo">
+            <div class="ui-block-a">
+              <h3>Previously browsed</h3>
+              <div id="browsed-list">blah</div> 
             </div>
-
+          </div>  
         </div>
 
-
-        <h3>Previously browsed</h3>
-
-            <div class="ui-grid-x">
-
-
-            <div class ="ui-block-a"><a href="#">
-                <img src="../www/img/salad.jpg" class="ui-li-thumb"></a><br>
-
-                <span><p>Salad Bowl<br> Prepared by <a href="#">You</a></p></span>
-
-            </div>
-            <div class="ui-block-b"><a href="#">
-                <img src="../www/img/burger.jpg" class="ui-li-thumb"></a>
-
-                <span><p>Burger<br>by <a href="#">McDonalds</a></p></span>
-
-            </div>
-
-        </div>
-
-        </div>
+    </div>
 
 <!--search page-->
     <div data-role="page" id="searchPage">
