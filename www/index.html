@@ -126,10 +126,33 @@
         alert("Error processing SQL: "+err.code);
       }
 
+      var apiCallResults = [];
+      var foodItemArray;
+
       function querySuccess(tx, results) {
 
+        foodItemArray = [];
+        var fLen = apiCallResults.length;
+        if (fLen > 0) {  
+          for (i = 0; i < fLen; i++) {
+            foodItemArray.push(['http://placehold.it/150x150', apiCallResults[i]["title"], apiCallResults[i]["ingredients"], 'You']);
+          }   
+        }
+
+        var rLen = results.rows.length;
+        if (rLen > 0) {
+          for (i = 0; i < rLen; i++) {
+            foodItemArray.push([results.rows.item(i).link, results.rows.item(i).name, results.rows.item(i).ingredients, results.rows.item(i).store]);
+          }  
+        }
+
+        if (foodItemArray.length > 0) {    
+          foodItemArray.sort(function(a, b){return 0.5 - Math.random()});
+        }
+
         var foodItemIndexText = '';
-        var len = results.rows.length;
+
+        var len = foodItemArray.length;
         for (var i = 0; i < len; i++) {
           if (i%2 == 0) {
             var foodItemText = '<div class="ui-block-a">';
@@ -137,13 +160,12 @@
             var foodItemText = '<div class="ui-block-b">';
           }
           
-          foodItemText += '<a href="#"><img src="'
-                        + results.rows.item(i).link
-                        + '" class="ui-li-thumb"></a><span><p>'
-                        + '<button class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" data-mini="true">Heart Icon</button>'
-                        + results.rows.item(i).name 
-                        + '<br>by <a href="#popupMap" data-rel="popup">' 
-                        + results.rows.item(i).store + '</a></p></span>';
+          foodItemText += '<div class="ui-block-a"><a href="#"><img src="'
+                        + foodItemArray[i][0]
+                        + '" class="ui-li-thumb"></a></div><div class="ui-block-a">'
+                        + foodItemArray[i][1] 
+                        + '</div><div class="ui-block-a">by <a href="#popupMap" data-rel="popup">' 
+                        + foodItemArray[i][3] + '</a></div>';
           foodItemText += "</div>";
           foodItemIndexText += foodItemText;
         }
@@ -220,50 +242,68 @@
         var desiredTime = $("#time-selector2").val();
         var foodItemName = $("#advanced-search").val();
         var ingredients = $("#ingredients-search").val();
-        // tx.executeSql("SELECT * FROM FoodItem where name like ('%"+ document.getElementById("advanced-search").value + "%')", [], querySuccess, errorCB);
+
+        var output = $.ajax({
+          url: 'http://www.recipepuppy.com/api/?q=' + foodItemName, 
+          type: 'GET',
+          data: {}, 
+          dataType: 'json',
+          success: function(data) {
+            // alert(data["results"].length);
+            // alert(data["results"][0]["title"]);
+            // alert(data["results"][0]["ingredients"]);
+            // alert(data["results"][0]["thumbnail"]);
+            apiCallResults = data["results"];
+          },
+          error: function(err) { alert(err); },
+          // beforeSend: function(xhr) {
+          // xhr.setRequestHeader("X-Mashape-Authorization", "YOUR_API_KEY"); // Enter here your Mashape key
+          // }
+        });
+        
         tx.executeSql("SELECT * FROM FoodItem where (name like '%"+ foodItemName + "%')" + " AND (ingredients like '%" + ingredients + "%')" + " AND (minutes <= " + desiredTime + " )", [], querySuccess, errorCB);
+
         $.mobile.changePage("#homePage");
       }
       
-
-
       $(document).ready(function(){
         $("#time-selector").change(function() {
           filterFoodItems();
+        });
       });
 
-      function addUser()     {
-        var name = document.getElementById("firstname").value;
-        var email = document.getElementById("email").value;
-        var pwd = document.getElementById("pwd").value;
+      // function addUser()     {
+      //   var name = document.getElementById("firstname").value;
+      //   var email = document.getElementById("email").value;
+      //   var pwd = document.getElementById("pwd").value;
 
-        if(name == "")
-        {
-            alert("Please enter your name");
-            return;
-        }
+      //   if(name == "")
+      //   {
+      //       alert("Please enter your name");
+      //       return;
+      //   }
 
-        if(email == "")
-        {
-            alert("Please enter your email");
-            return;
-        }
-        if(pwd == "")
-        {
-            alert("Please enter your password");
-            return;
-        }
+      //   if(email == "")
+      //   {
+      //       alert("Please enter your email");
+      //       return;
+      //   }
+      //   if(pwd == "")
+      //   {
+      //       alert("Please enter your password");
+      //       return;
+      //   }
 
-        db.transaction(function(tx) {
-            tx.executeSql("INSERT INTO User VALUES (?,?, ?)", [name, email, pwd], function(tx,res){
-                alert("User Registered");
-            });
-        }, function(err){
-            alert("An error occured while registering the user");
-        });
-      }
+      //   db.transaction(function(tx) {
+      //       tx.executeSql("INSERT INTO User VALUES (?,?, ?)", [name, email, pwd], function(tx,res){
+      //           alert("User Registered");
+      //       });
+      //   }, function(err){
+      //       alert("An error occured while registering the user");
+      //   });
+      // }
 
-
+  
       function filterFoodItems(){
         db.transaction(filterQueryDB, errorCB);
       }
@@ -276,8 +316,6 @@
           db.transaction(queryDB, errorCB);
         }
       }
-});
-      
 
     </script>
 
