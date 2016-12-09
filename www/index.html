@@ -160,22 +160,13 @@
             var foodItemText = '<div class="ui-block-b">';
           }
           
-<<<<<<< HEAD
           foodItemText += '<div class="ui-block-a"><a href="#"><img src="'
                         + foodItemArray[i][0]
                         + '" class="ui-li-thumb"></a></div><div class="ui-block-a">'
                         + foodItemArray[i][1] 
                         + '</div><div class="ui-block-a">by <a href="#popupMap" data-rel="popup">' 
                         + foodItemArray[i][3] + '</a></div>';
-=======
-          foodItemText +='<a href="#"><img src="'
-                        + results.rows.item(i).link
-                        + '" class="ui-li-thumb"></a><span><p>'
-                        + '<button class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext" data-mini="true">Heart Icon</button>'
-                        + results.rows.item(i).name 
-                        + '<br>by <a href="#popupMap" data-rel="popup">' 
-                        + results.rows.item(i).store + '</a></p></span>';
->>>>>>> a5b458a644e833d546437fddb9c83d25fdc84c09
+
           foodItemText += "</div>";
           foodItemIndexText += foodItemText;
         }
