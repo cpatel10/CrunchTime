@@ -228,6 +228,10 @@
         });
       }
 
+      function goSearch() { 
+        db.transaction(searchQueryDB, errorCB);
+      }
+
       function goMyPage() { 
         db.transaction(myPageSearchQueryDB, errorCB);
       }
