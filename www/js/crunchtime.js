@@ -20,26 +20,59 @@ $(document).mouseup(function (e)
         container.hide(350);
     }
 });
-$("#loginButton").click(function() {
+
+function addUser()     {
+    var name = document.getElementById("firstname").value;
+    var email = document.getElementById("email").value;
+    var pwd = document.getElementById("pwd").value;
+
+    if(name == "")
+    {
+        alert("Please enter your name");
+        return;
+    }
+
+    if(email == "")
+    {
+        alert("Please enter your email");
+        return;
+    }
+    if(pwd == "")
+    {
+        alert("Please enter your password");
+        return;
+    }
+
+    db.transaction(function(tx) {
+        tx.executeSql("INSERT INTO User VALUES (?,?,?,?)", [2, name, email, pwd], function(tx,res){
+            alert("User Registered");
+        });
+    }, function(err){
+        alert("An error occured while registering the user");
+    });
+}
+
+function login() {
     var email = $("#email").val();
     var password = $("#pswd").val();
 
-    if (userName.length === 0 || password.length === 0) {
+    if (email.length === 0 || password.length === 0) {
         alert("Both fields are required.");
     } else {
-        myDB.transaction(function(transaction) {
+        db.transaction(function (transaction) {
             transaction.executeSql('SELECT * FROM User WHERE email = "' + email + '" and password = "' + password + '"', [],
-                function(transaction, results) {
+                function (transaction, results) {
                     alert("Successful");
+
                 },
-                function(transaction, error) {
+                function (transaction, error) {
                     alert("Login Error");
                 }
             );
 
         });
     }
-});
+}
 
 
 

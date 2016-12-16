@@ -14,6 +14,7 @@
 
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/crunchtime.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.update.js"></script>
 
     
     <script src="cordova.js"></script>
@@ -344,36 +345,7 @@
         });
       });
 
-      // function addUser()     {
-      //   var name = document.getElementById("firstname").value;
-      //   var email = document.getElementById("email").value;
-      //   var pwd = document.getElementById("pwd").value;
 
-      //   if(name == "")
-      //   {
-      //       alert("Please enter your name");
-      //       return;
-      //   }
-
-      //   if(email == "")
-      //   {
-      //       alert("Please enter your email");
-      //       return;
-      //   }
-      //   if(pwd == "")
-      //   {
-      //       alert("Please enter your password");
-      //       return;
-      //   }
-
-      //   db.transaction(function(tx) {
-      //       tx.executeSql("INSERT INTO User VALUES (?,?, ?)", [name, email, pwd], function(tx,res){
-      //           alert("User Registered");
-      //       });
-      //   }, function(err){
-      //       alert("An error occured while registering the user");
-      //   });
-      // }
 
   
       function filterFoodItems(){
@@ -404,9 +376,7 @@
                         <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop" >Login</a></li>
                         <li data-icon="false"><a href="#signUpPage" data-rel="popup" data-position-to="window" data-transition="pop">Register</a></li>
 
-                        <!--<li data-icon="false"><a href="#myPage" onclick="goMyPage()">My Page</a></li>-->
-
-                        <!--<li data-icon="false"><a href="#myPage">My Page</a></li>-->
+                        <li data-icon="false"><a href="#myPage" onclick="goMyPage()">My Page</a></li>
 
                         <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
                         <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
@@ -468,10 +438,9 @@
                 <input type="text" name="username" id="username" placeholder="Username" value="" data-mini="true">
                 <label for="pswd" class="ui-hidden-accessible">Password:</label>
                 <input type="password" name="pswd" id="pswd" placeholder="Password" value="" data-mini="true">
-                <!--<button id="loginButton">Login</button>-->
-                <!--<label for="log">Keep me logged in</label>-->
-                <!--<input type="checkbox" name="login" id="log" value="1" data-mini="true"><br>-->
-                <a href="#myPage" onclick="goMyPage()"><input type="submit" data-inline="true" value="Login" data-mini="true"></a>
+                <button id="loginButton" onclick="login()">Login</button>
+
+                <!--<a href="#myPage" onclick="goMyPage()"><input type="submit" data-inline="true" value="Login" data-mini="true"></a>-->
             </form>
         </div>
 
@@ -538,8 +507,8 @@
         <h1>CrunchTime</h1>
             <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
             <ul class= "one nav-menu" data-role="listview" data-inset="true">
-                <li data-icon="false"><a href="#loginPage">Login</a></li>
-                <li data-icon="false"><a href="#signUpPage">Register</a></li>
+                <li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop">Login</a></li>
+                <li data-icon="false"><a href="#signUpPage" data-rel="popup" data-position-to="window" data-transition="pop">Register</a></li>
                 <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
                 <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
             </ul>
@@ -578,47 +547,47 @@
 
     </div>
 
-<!--search result page-->
-    <div data-role="page" id="searchResultPage">
-        <div id="header3" data-role="header">
-        <h1>CrunchTime</h1>
-            <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
-            <ul class= "one nav-menu" data-role="listview" data-inset="true">
-                <li data-icon="false"><a href="#homePage">Logout</a></li>
-                <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
-                <li data-icon="false"><a href="#aboutUsPage">About Us</a></li>
-            </ul>
-        </div>
-        <h3>Search Result</h3>
-        <div class="ui-grid-x">
+<!--&lt;!&ndash;search result page&ndash;&gt;-->
+    <!--<div data-role="page" id="searchResultPage">-->
+        <!--<div id="header3" data-role="header">-->
+        <!--<h1>CrunchTime</h1>-->
+            <!--<span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>-->
+            <!--<ul class= "one nav-menu" data-role="listview" data-inset="true">-->
+                <!--<li data-icon="false"><a href="#homePage">Logout</a></li>-->
+                <!--<li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>-->
+                <!--<li data-icon="false"><a href="#aboutUsPage">About Us</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<h3>Search Result</h3>-->
+        <!--<div class="ui-grid-x">-->
 
-            <div class = "ui-block-a">
-                <a href="#">
-                    <img src="../www/img/burritoBowl.jpg" class="ui-li-thumb"></a><br>
+            <!--<div class = "ui-block-a">-->
+                <!--<a href="#">-->
+                    <!--<img src="../www/img/burritoBowl.jpg" class="ui-li-thumb"></a><br>-->
 
-                <span>Burrito Bowl<br> by <a href="#" >Chipotle</a></p></span>
+                <!--<span>Burrito Bowl<br> by <a href="#" >Chipotle</a></p></span>-->
 
-            </div>
-            <div class="ui-block-b"><a href="#">
-                <img src="../www/img/taco.jpg" class="ui-li-thumb"></a>
+            <!--</div>-->
+            <!--<div class="ui-block-b"><a href="#">-->
+                <!--<img src="../www/img/taco.jpg" class="ui-li-thumb"></a>-->
 
-                <span><p>Crispy Corn Tacos<br>by <a href="#">Taco Bell</a></p></span>
+                <!--<span><p>Crispy Corn Tacos<br>by <a href="#">Taco Bell</a></p></span>-->
 
-            </div>
-            <div class ="ui-block-a"><a href="#">
-                <img src="../www/img/salad.jpg" class="ui-li-thumb"></a><br>
+            <!--</div>-->
+            <!--<div class ="ui-block-a"><a href="#">-->
+                <!--<img src="../www/img/salad.jpg" class="ui-li-thumb"></a><br>-->
 
-                <span><p>Salad Bowl<br> Prepared by <a href="#">You</a></p></span>
+                <!--<span><p>Salad Bowl<br> Prepared by <a href="#">You</a></p></span>-->
 
-            </div>
-            <div class="ui-block-b"><a href="#">
-                <img src="../www/img/burger.jpg" class="ui-li-thumb"></a>
+            <!--</div>-->
+            <!--<div class="ui-block-b"><a href="#">-->
+                <!--<img src="../www/img/burger.jpg" class="ui-li-thumb"></a>-->
 
-                <span><p>Burger<br>by <a href="#">McDonalds</a></p></span>
+                <!--<span><p>Burger<br>by <a href="#">McDonalds</a></p></span>-->
 
-            </div>
-        </div>
-    </div>
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
 <!--about us page-->
     <div data-role="page" id="aboutUsPage">
@@ -626,10 +595,8 @@
         <h1>CrunchTime</h1>
             <span data-role="button" class="ui-btn ui-btn-right ui-corner-all ui-icon-bars ui-btn-icon-notext"style= "margin-top: 8px" onclick="menuContentShow()">Bars Icon</span>
             <ul class= "one nav-menu" data-role="listview" data-inset="true">
-                <!--<li data-icon="false"><a href="#loginPage" data-rel="popup" data-position-to="window" data-transition="pop">Login</a></li>-->
-                <!--<li data-icon="false"><a href="#signUpPage">Register</a></li>-->
                 <li data-icon="false"><a href="#homePage" onclick="reloadListing()">Home</a></li>
-                <!--<li data-icon="false"><a href="#homePage">Logout</a></li>-->
+
             </ul>
         </div>
         <div data-role="main" content="ui-content">
